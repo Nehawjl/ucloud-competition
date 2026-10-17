@@ -1,0 +1,7 @@
+{
+  "dataset": "IFBench100",
+  "configuration": "W4A16 + BF16 KV",
+  "metrics": {
+    "prompt_level_strict": {"score": 0.8000}
+  }
+}

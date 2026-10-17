@@ -1,0 +1,7 @@
+INT8_ACT=
+MODEL=/root/ucloud-com-models/hyperqwen-1f05c441c4e64ae0549de44fa9ea5a6d43610314-124c14e7e8c7d2f5402933b9af368e772a9fcf0c/prepared-fast-w4a4g
+MAX_SEQS=12
+EXTRA_ARGS=--no-enable-prefix-caching --max-num-batched-tokens 1280 --linear-backend humming
+CG=48
+DRAFT_TOKENS=2
+MTP_DRAFT_VOCAB=unset-default-40960

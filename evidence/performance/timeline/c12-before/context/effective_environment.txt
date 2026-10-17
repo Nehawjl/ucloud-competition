@@ -1,0 +1,9 @@
+VLLM_MARLIN_INPUT_DTYPE=int8
+VLLM_MARLIN_TUNE_HITS_PATH=/root/ucloud-com-runs/20261017T131511Z-hyperqwen-perc-scan/arms/c12-tuned/marlin_hits.json
+VLLM_FAIR_PREFILL_ROTATION=0
+VLLM_MARLIN_TUNE=1
+MAX_SEQS=12
+VLLM_MARLIN_TUNE_DIR=/root/ucloud-com-builds/20261017T131511Z-hyperqwen-perc-scan-marlin-sm89-v031-service/tuner
+EXTRA_ARGS=--no-enable-prefix-caching --max-num-batched-tokens 1024
+VLLM_MARLIN_INT8_INCLUDE_RE=mlp|linear_attn|self_attn
+CG=48

@@ -1,0 +1,81 @@
+{
+  "started_at": "2026-10-16T14:57:07.844714+00:00",
+  "status": "完整",
+  "issues": [],
+  "configuration": {
+    "model": "qwen3.8-27b-fp8",
+    "base_url": "http://127.0.0.1:8088/v1",
+    "eval_batch_size": 2,
+    "tokenizer": "builtin",
+    "perf_requests": 100
+  },
+  "performance": [],
+  "resume_provenance": {
+    "source_run_id": "20261016T101224Z-baseline-vllm-fp8",
+    "source_run_status": {
+      "run_id": "20261016T101224Z-baseline-vllm-fp8",
+      "started_at": "2026-10-16T10:12:47Z",
+      "ended_at": "2026-10-16T14:53:07Z",
+      "status": "failed",
+      "exit_code": 130
+    },
+    "cached_predictions": 99,
+    "missing_indices": [
+      88
+    ],
+    "cache_sha256": {
+      "qwen3.8-27b-fp8/ifbench_default.jsonl": "d7655e105bfc91b883288b9ce825ad92a2d970c19fc1663699827de277c1aa95"
+    },
+    "source_performance_summary": "/root/ucloud-com-runs/20261016T101224Z-baseline-vllm-fp8/eval/performance/summary.json",
+    "changes": {
+      "model_args": {
+        "timeout": null,
+        "max_retries": 0
+      },
+      "generation_config_overrides": {
+        "retries": 1,
+        "retry_interval": 0
+      }
+    },
+    "review_policy": "Recompute native IFBench scores for all cached and new predictions"
+  },
+  "accuracy": {
+    "status": "完整",
+    "issues": [],
+    "metrics": {
+      "prompt_level_strict": {
+        "score": 0.8,
+        "num": 100
+      },
+      "inst_level_strict": {
+        "score": 0.8018,
+        "num": 111
+      },
+      "prompt_level_loose": {
+        "score": 0.87,
+        "num": 100
+      },
+      "inst_level_loose": {
+        "score": 0.8739,
+        "num": 111
+      }
+    },
+    "generated_samples": 100,
+    "execution_summary": {
+      "requested": 100,
+      "succeeded": 100,
+      "errored": 0,
+      "incomplete": false,
+      "subsets": {
+        "default": {
+          "requested": 100,
+          "succeeded": 100,
+          "errored": 0
+        }
+      }
+    },
+    "native_report": "/root/ucloud-com-runs/20261016T145455Z-baseline-accuracy-no-timeout/eval/accuracy/native/reports/qwen3.8-27b-fp8/ifbench.json",
+    "artifacts": "/root/ucloud-com-runs/20261016T145455Z-baseline-accuracy-no-timeout/eval/accuracy"
+  },
+  "ended_at": "2026-10-16T15:14:36.362974+00:00"
+}

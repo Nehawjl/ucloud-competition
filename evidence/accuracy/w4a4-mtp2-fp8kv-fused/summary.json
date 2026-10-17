@@ -1,0 +1,38 @@
+{
+  "status": "完整",
+  "issues": [],
+  "metrics": {
+    "prompt_level_strict": {
+      "score": 0.73,
+      "num": 100
+    },
+    "inst_level_strict": {
+      "score": 0.7477,
+      "num": 111
+    },
+    "prompt_level_loose": {
+      "score": 0.84,
+      "num": 100
+    },
+    "inst_level_loose": {
+      "score": 0.8559,
+      "num": 111
+    }
+  },
+  "generated_samples": 100,
+  "execution_summary": {
+    "requested": 100,
+    "succeeded": 100,
+    "errored": 0,
+    "incomplete": false,
+    "subsets": {
+      "default": {
+        "requested": 100,
+        "succeeded": 100,
+        "errored": 0
+      }
+    }
+  },
+  "native_report": "/root/ucloud-com-runs/20261017T214914Z-hyperqwen-w4a4-mtp2-fp8-ifbench100/arms/triton/eval/accuracy/native/reports/qwen3.8-27b/ifbench.json",
+  "artifacts": "/root/ucloud-com-runs/20261017T214914Z-hyperqwen-w4a4-mtp2-fp8-ifbench100/arms/triton/eval/accuracy"
+}

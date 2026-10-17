@@ -1,0 +1,24 @@
+{
+  "model": "qwen3.8-27b-fp8",
+  "api_url": "http://127.0.0.1:8088/v1",
+  "api_key_env": "OPENAI_API_KEY",
+  "eval_type": "openai_api",
+  "datasets": [
+    "ifbench"
+  ],
+  "limit": 100,
+  "eval_batch_size": 2,
+  "generation_config": {
+    "max_tokens": 32768,
+    "retries": 1,
+    "retry_interval": 0
+  },
+  "work_dir": "/root/ucloud-com-runs/20261016T145455Z-baseline-accuracy-no-timeout/eval/accuracy/native",
+  "no_timestamp": true,
+  "model_args": {
+    "timeout": null,
+    "max_retries": 0
+  },
+  "use_cache": "/root/ucloud-com-runs/20261016T145455Z-baseline-accuracy-no-timeout/eval/accuracy/native",
+  "rerun_review": true
+}

@@ -1,0 +1,26 @@
+{
+  "repo": "signalnine/Qwen3.8-27B-MTP-q27",
+  "revision": "fc08705d385fcad3731e993ed190e3d009a5baed",
+  "files": {
+    "qwen38-27b-mtp.q27": {
+      "size": 16995966464,
+      "md5": "8665573f9ed1d26f59eef4120508f49c",
+      "sha256": "15617ec82a0c41fa0e8132ac765202a233488ea8ce5f3817a71e3051577013d0"
+    },
+    "qwen38-27b-mtp.tok": {
+      "size": 7212628,
+      "md5": "bb95b3ca7647ce1cc061c141789e7102",
+      "sha256": "f8adac2001668f3ba68e040e5c13f0982d6a194e2b4d9047cc050fdc6d7c93f2"
+    },
+    "CHECKSUMS.md5": {
+      "size": 400,
+      "md5": "f0e2f5e1d52513d5f127134388ee5735",
+      "sha256": "3c6122ad4d8a78306e84d7a45ec74af5dd8d30ce4defaba5cadcedaccdc92109"
+    },
+    "README.md": {
+      "size": 4083,
+      "md5": "aec2120e0fd3cf08b7e774e3c86d65bf",
+      "sha256": "d5caf737a24e9ade133cd6da8fcf872710ef38ab638abec463d66d99dcba9c4b"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "完整",
+  "issues": [],
+  "concurrency": 2,
+  "expected_requests": 100,
+  "records": 100,
+  "valid_records": 100,
+  "successful_requests": 100.0,
+  "error_requests": 0,
+  "lengths_verified": true,
+  "osl_verified": true,
+  "input_length_basis": "tiktoken/o200k_base",
+  "actual_input_tokens": {
+    "min": 8192,
+    "max": 8192,
+    "mean": 8192.0
+  },
+  "metrics": {
+    "time_to_first_token": {
+      "mean": 4154.80104982,
+      "p50": 4018.7792929999996,
+      "p95": 4996.62982975,
+      "p99": 6916.489969920004
+    },
+    "inter_token_latency": {
+      "mean": 15.640035854363994,
+      "p50": 15.699057931506848,
+      "p95": 18.187263782778864,
+      "p99": 18.39481695555773
+    },
+    "request_latency": {
+      "mean": 12146.859371399998,
+      "p50": 12045.277681,
+      "p95": 13403.7884492,
+      "p99": 13937.648303210004
+    }
+  },
+  "benchmark_duration": 608.923387392,
+  "request_throughput": 0.16422340233086366,
+  "output_token_throughput": 84.0823819934022,
+  "artifacts": "/root/ucloud-com-runs/20261016T191937Z-ninfer-perf/eval/performance/c2"
+}

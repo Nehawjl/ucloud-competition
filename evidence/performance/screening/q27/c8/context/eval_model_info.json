@@ -1,0 +1,6 @@
+{
+  "id": "qwen38-27b-mtp",
+  "max_model_len": 262144,
+  "object": "model",
+  "owned_by": "q27"
+}

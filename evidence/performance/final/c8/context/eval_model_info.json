@@ -1,0 +1,25 @@
+{
+  "id": "qwen3.8-27b",
+  "object": "model",
+  "created": 1792269823,
+  "owned_by": "vllm",
+  "root": "/root/ucloud-com-models/hyperqwen-1f05c441c4e64ae0549de44fa9ea5a6d43610314-124c14e7e8c7d2f5402933b9af368e772a9fcf0c/prepared-fast-w4a4g",
+  "parent": null,
+  "max_model_len": 65536,
+  "permission": [
+    {
+      "id": "modelperm-bcc116dbaead2753",
+      "object": "model_permission",
+      "created": 1792269823,
+      "allow_create_engine": false,
+      "allow_sampling": true,
+      "allow_logprobs": true,
+      "allow_search_indices": false,
+      "allow_view": true,
+      "allow_fine_tuning": false,
+      "organization": "*",
+      "group": null,
+      "is_blocking": false
+    }
+  ]
+}

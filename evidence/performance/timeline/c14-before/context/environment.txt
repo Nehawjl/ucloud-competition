@@ -1,0 +1,19 @@
+2026-10-17T16:51:54Z
+Linux cpod-1wjio3xyysyw 6.12.101-compshare #1compshare SMP PREEMPT_DYNAMIC Mon Aug 17 10:58:35 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+NVIDIA GeForce RTX 4090, GPU-e21a69cd-a08b-19a7-7123-f2f059c8f345, 49140 MiB, 610.57.04
+Python 3.12.14
+humming 0.1.16
+torch 2.13.0+cu130
+vllm 0.31.0

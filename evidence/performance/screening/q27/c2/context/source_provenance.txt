@@ -1,0 +1,2 @@
+source_url=https://codeload.github.com/signalnine/q27/tar.gz/2945e35bc82b052cd147618bbaa8de435cfe73c0
+archive_sha256=7644ef3bc624d8a07c2f8813e26c364020351610262cd0d11c6b5eb71299396c

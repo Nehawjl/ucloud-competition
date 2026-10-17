@@ -1,0 +1,1 @@
+bash /root/ucloud-com-builds/hyperqwen-95ee3b64b0df7014ee2626529524d6b99c3dcdd1-dd4299950d0796f3d71c72af4ab58710ed9656da0b82eaabab0c80404ce54f18/single-user/start_qwen.sh 

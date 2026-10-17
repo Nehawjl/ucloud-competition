@@ -1,0 +1,7 @@
+VLLM_MARLIN_INPUT_DTYPE=int8
+VLLM_FAIR_PREFILL_ROTATION=0
+VLLM_MARLIN_TUNE=0
+VLLM_MARLIN_TUNE_DIR=
+EXTRA_ARGS=--no-enable-prefix-caching --max-num-batched-tokens 1024
+VLLM_MARLIN_INT8_INCLUDE_RE=mlp|linear_attn|self_attn
+CG=40

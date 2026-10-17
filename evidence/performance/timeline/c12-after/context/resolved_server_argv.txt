@@ -1,0 +1,52 @@
+[effective-config] MODE=single
+[effective-config] CTX=fast SPEC=mtp
+[effective-config] MODEL=/root/ucloud-com-models/hyperqwen-1f05c441c4e64ae0549de44fa9ea5a6d43610314-124c14e7e8c7d2f5402933b9af368e772a9fcf0c/prepared-fast-w4a4g PORT=18099
+[effective-config] MAX_LEN=65536 MAX_SEQS=12
+[effective-config] VLLM_API_KEY=unset api_key.txt=absent
+no API key: binding 127.0.0.1 only. To serve other machines, set VLLM_API_KEY (openssl rand -hex 24 > api_key.txt) or HOST=0.0.0.0.
+venv/bin/vllm
+serve
+/root/ucloud-com-models/hyperqwen-1f05c441c4e64ae0549de44fa9ea5a6d43610314-124c14e7e8c7d2f5402933b9af368e772a9fcf0c/prepared-fast-w4a4g
+--served-model-name
+qwen3.8-27b
+--host
+127.0.0.1
+--port
+18099
+--gpu-memory-utilization
+0.93
+--max-model-len
+65536
+--max-num-seqs
+12
+--api-server-count
+1
+--language-model-only
+--attention-backend
+FLASH_ATTN
+--kv-cache-dtype
+bfloat16
+--mamba-ssm-cache-dtype
+float16
+--async-scheduling
+--max-num-batched-tokens
+2048
+--speculative-config
+{"method":"mtp","num_speculative_tokens":2,"draft_sample_method":"probabilistic"}
+--compilation-config
+{"max_cudagraph_capture_size":48,"custom_ops":["+rms_norm","+silu_and_mul"]}
+--reasoning-parser
+qwen3
+--enable-prompt-tokens-details
+--enable-auto-tool-choice
+--tool-call-parser
+qwen3_coder
+--tool-strict-level
+parameter
+--no-enable-prefix-caching
+--max-num-batched-tokens
+1280
+--linear-backend
+humming
+--sse-keep-alive-interval
+30

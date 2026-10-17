@@ -1,0 +1,1 @@
+/root/.venvs/ucloud-vllm-0.31.0/bin/vllm serve /model/ModelScope/Qwen/Qwen3.8-27B-FP8 --host 127.0.0.1 --port 8088 --tensor-parallel-size 1 --dtype auto --gpu-memory-utilization 0.90 --max-model-len 65536 --max-num-seqs 4 --kv-cache-dtype fp8 --reasoning-parser qwen3 --served-model-name qwen3.8-27b-fp8 

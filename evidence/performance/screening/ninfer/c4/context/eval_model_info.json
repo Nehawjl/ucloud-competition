@@ -1,0 +1,11 @@
+{
+  "context_window": 65536,
+  "created": 1792178412,
+  "id": "qwen3.8-27b-ninfer",
+  "max_model_len": 65536,
+  "modalities": {
+    "vision": false
+  },
+  "object": "model",
+  "owned_by": "ninfer"
+}

@@ -1,0 +1,10 @@
+llamacpp:prompt_tokens_total 3547225
+llamacpp:prompt_seconds_total 1655.650194
+llamacpp:tokens_predicted_total 220815
+llamacpp:tokens_predicted_seconds_total 925.936069
+llamacpp:requests_processing 0
+llamacpp:requests_deferred 0
+ninfer:requests_total 437
+ninfer:prefix_cache_hit_tokens_total 0
+ninfer:draft_tokens_total 177039
+ninfer:draft_accepted_tokens_total 161569

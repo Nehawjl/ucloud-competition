@@ -1,0 +1,42 @@
+{
+  "status": "完整",
+  "issues": [],
+  "concurrency": 8,
+  "expected_requests": 100,
+  "records": 100,
+  "valid_records": 100,
+  "successful_requests": 100.0,
+  "error_requests": 0,
+  "lengths_verified": true,
+  "osl_verified": true,
+  "input_length_basis": "tiktoken/o200k_base",
+  "actual_input_tokens": {
+    "min": 8192,
+    "max": 8192,
+    "mean": 8192.0
+  },
+  "metrics": {
+    "time_to_first_token": {
+      "mean": 19261.76028651,
+      "p50": 20808.890065499996,
+      "p95": 24727.230990199998,
+      "p99": 24728.37042073
+    },
+    "inter_token_latency": {
+      "mean": 26.120636995127203,
+      "p50": 23.74847862426614,
+      "p95": 50.967550901076315,
+      "p99": 59.01067607373778
+    },
+    "request_latency": {
+      "mean": 32609.405791020003,
+      "p50": 33503.781421499996,
+      "p95": 35720.50531205,
+      "p99": 49933.30641730002
+    }
+  },
+  "benchmark_duration": 425.09108992,
+  "request_throughput": 0.23524169667630362,
+  "output_token_throughput": 120.44374869826746,
+  "artifacts": "/root/ucloud-com-runs/20261016T172526Z-q27-perf/eval/performance/c8"
+}

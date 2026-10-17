@@ -1,0 +1,10 @@
+VLLM_HUMMING_FUSED_SILU=1
+INT8_ACT=
+MODEL=/root/ucloud-com-models/hyperqwen-1f05c441c4e64ae0549de44fa9ea5a6d43610314-124c14e7e8c7d2f5402933b9af368e772a9fcf0c/prepared-fast-w4a4g
+CTX=long
+MAX_SEQS=14
+VLLM_SPEC_DECODE_ATTN=1
+EXTRA_ARGS=--no-enable-prefix-caching --max-num-batched-tokens 1536 --linear-backend humming --max-num-scheduled-tokens 1408 --stream-interval 2 --compilation-config {"max_cudagraph_capture_size":42,"cudagraph_capture_sizes":[1,2,3,4,6,8,9,12,15,16,18,21,24,27,30,32,33,36,39,40,42],"custom_ops":["+rms_norm","+silu_and_mul"]} --attention-backend TRITON_ATTN --speculative-config {"method":"mtp","num_speculative_tokens":2,"draft_sample_method":"greedy","attention_backend":"TRITON_ATTN"}
+CG=42
+DRAFT_TOKENS=2
+MTP_DRAFT_VOCAB=unset-default-40960

@@ -1,0 +1,280 @@
+{
+  "data": {
+    "benchmark_id": "f33c28df87d5",
+    "end_ns": 1792180479540894014,
+    "endpoint_summaries": {
+      "127.0.0.1:8088": {
+        "endpoint_url": "http://127.0.0.1:8088/metrics",
+        "info": {
+          "avg_fetch_latency_ms": 0.271602029953917,
+          "avg_update_interval_ms": 415.53460467893217,
+          "duration_seconds": 575.930962085,
+          "first_fetch_ns": 1792179901609436412,
+          "first_update_ns": 1792179901609436412,
+          "last_fetch_ns": 1792180479540894014,
+          "last_update_ns": 1792180477540398497,
+          "median_update_interval_ms": 333.9085795,
+          "total_fetches": 1736,
+          "unique_updates": 1387
+        },
+        "metrics": {
+          "llamacpp:prompt_seconds_total": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 1054.9452853352534,
+                  "max": 1243.152678,
+                  "min": 860.594776,
+                  "p1": 865.9965536,
+                  "p10": 902.672065,
+                  "p25": 958.486215,
+                  "p5": 881.610068,
+                  "p50": 1053.5241055,
+                  "p75": 1151.341359,
+                  "p90": 1208.727714,
+                  "p95": 1227.9688015,
+                  "p99": 1243.152678,
+                  "std": 111.02033766939515
+                }
+              }
+            ],
+            "type": "unknown"
+          },
+          "llamacpp:prompt_tokens_total": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 2259484.244239631,
+                  "max": 2662489.0,
+                  "min": 1843289.0,
+                  "p1": 1854911.4,
+                  "p10": 1933401.0,
+                  "p25": 2052953.0,
+                  "p5": 1888345.0,
+                  "p50": 2256473.0,
+                  "p75": 2465881.0,
+                  "p90": 2588761.0,
+                  "p95": 2629977.0,
+                  "p99": 2662489.0,
+                  "std": 237732.59385951873
+                }
+              }
+            ],
+            "type": "unknown"
+          },
+          "llamacpp:requests_deferred": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 0.0,
+                  "max": 0.0,
+                  "min": 0.0,
+                  "p1": 0.0,
+                  "p10": 0.0,
+                  "p25": 0.0,
+                  "p5": 0.0,
+                  "p50": 0.0,
+                  "p75": 0.0,
+                  "p90": 0.0,
+                  "p95": 0.0,
+                  "p99": 0.0,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "unknown"
+          },
+          "llamacpp:requests_processing": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 3.9700460829493087,
+                  "max": 4.0,
+                  "min": 0.0,
+                  "p1": 3.0,
+                  "p10": 4.0,
+                  "p25": 4.0,
+                  "p5": 4.0,
+                  "p50": 4.0,
+                  "p75": 4.0,
+                  "p90": 4.0,
+                  "p95": 4.0,
+                  "p99": 4.0,
+                  "std": 0.30786276024090553
+                }
+              }
+            ],
+            "type": "unknown"
+          },
+          "llamacpp:tokens_predicted_seconds_total": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 696.7247394112903,
+                  "max": 793.13752,
+                  "min": 604.493671,
+                  "p1": 604.5978383,
+                  "p10": 619.5857579999999,
+                  "p25": 649.78542325,
+                  "p5": 611.686822,
+                  "p50": 697.9929870000001,
+                  "p75": 743.88595275,
+                  "p90": 772.587773,
+                  "p95": 781.932813,
+                  "p99": 789.79754815,
+                  "std": 54.755034539418766
+                }
+              }
+            ],
+            "type": "unknown"
+          },
+          "llamacpp:tokens_predicted_total": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 139470.3047235023,
+                  "max": 165627.0,
+                  "min": 114527.0,
+                  "p1": 114531.35,
+                  "p10": 118683.0,
+                  "p25": 126699.75,
+                  "p5": 116515.0,
+                  "p50": 139604.5,
+                  "p75": 152350.25,
+                  "p90": 160071.0,
+                  "p95": 162648.0,
+                  "p99": 164828.6,
+                  "std": 14834.880047901308
+                }
+              }
+            ],
+            "type": "unknown"
+          },
+          "ninfer:draft_accepted_tokens_total": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 101462.38479262673,
+                  "max": 121168.0,
+                  "min": 83809.0,
+                  "p1": 83809.0,
+                  "p10": 86833.0,
+                  "p25": 91991.0,
+                  "p5": 84567.0,
+                  "p50": 101284.0,
+                  "p75": 110794.5,
+                  "p90": 116277.0,
+                  "p95": 118535.0,
+                  "p99": 120038.0,
+                  "std": 10805.79384719085
+                }
+              }
+            ],
+            "type": "unknown"
+          },
+          "ninfer:draft_tokens_total": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 111285.68029953918,
+                  "max": 132858.0,
+                  "min": 91795.0,
+                  "p1": 91795.0,
+                  "p10": 94978.0,
+                  "p25": 100945.0,
+                  "p5": 92584.0,
+                  "p50": 111351.0,
+                  "p75": 121488.0,
+                  "p90": 127626.0,
+                  "p95": 130041.0,
+                  "p99": 131656.0,
+                  "std": 11938.039358029904
+                }
+              }
+            ],
+            "type": "unknown"
+          },
+          "ninfer:prefix_cache_hit_tokens_total": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 0.0,
+                  "max": 0.0,
+                  "min": 0.0,
+                  "p1": 0.0,
+                  "p10": 0.0,
+                  "p25": 0.0,
+                  "p5": 0.0,
+                  "p50": 0.0,
+                  "p75": 0.0,
+                  "p90": 0.0,
+                  "p95": 0.0,
+                  "p99": 0.0,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "unknown"
+          },
+          "ninfer:requests_total": {
+            "description": "",
+            "series": [
+              {
+                "stats": {
+                  "avg": 276.30760368663596,
+                  "max": 329.0,
+                  "min": 229.0,
+                  "p1": 229.0,
+                  "p10": 237.0,
+                  "p25": 251.0,
+                  "p5": 231.0,
+                  "p50": 276.0,
+                  "p75": 301.25,
+                  "p90": 316.0,
+                  "p95": 322.0,
+                  "p99": 326.0,
+                  "std": 28.963514160496235
+                }
+              }
+            ],
+            "type": "unknown"
+          }
+        }
+      }
+    },
+    "endpoints_configured": [
+      "http://127.0.0.1:8088/metrics"
+    ],
+    "endpoints_successful": [
+      "http://127.0.0.1:8088/metrics"
+    ],
+    "error_summary": [],
+    "phase": "profiling",
+    "phase_index": 1,
+    "phase_kind": "profiling",
+    "phase_name": "profiling",
+    "phase_results": [],
+    "profiling_index": 0,
+    "start_ns": 1792179901609436412
+  },
+  "phase": {
+    "end_ns": 1792180477539215719,
+    "phase_index": 1,
+    "phase_kind": "profiling",
+    "phase_name": "profiling",
+    "profiling_index": 0,
+    "start_ns": 1792179901594523256,
+    "was_cancelled": false
+  },
+  "schema_version": 1,
+  "warnings": []
+}

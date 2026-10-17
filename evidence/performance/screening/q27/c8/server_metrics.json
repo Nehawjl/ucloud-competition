@@ -1,0 +1,825 @@
+{
+  "data": {
+    "benchmark_id": "c2cdbac79e00",
+    "end_ns": 1792173482683009121,
+    "endpoint_summaries": {
+      "127.0.0.1:8088": {
+        "endpoint_url": "http://127.0.0.1:8088/metrics",
+        "info": {
+          "avg_fetch_latency_ms": 0.4147931431906615,
+          "avg_update_interval_ms": 332.61384112305296,
+          "duration_seconds": 427.076172002,
+          "first_fetch_ns": 1792173055606837119,
+          "first_update_ns": 1792173055606837119,
+          "last_fetch_ns": 1792173482683009121,
+          "last_update_ns": 1792173482683009121,
+          "median_update_interval_ms": 333.2626395,
+          "total_fetches": 1285,
+          "unique_updates": 1285
+        },
+        "metrics": {
+          "q27_decode_tokens": {
+            "description": "Generated tokens delivered.",
+            "series": [
+              {
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "rate": 119.87930546543257,
+                  "total": 51200.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_decode_tokens_processed": {
+            "description": "Tokens delivered during decode (live, cumulative).",
+            "series": [
+              {
+                "stats": {
+                  "rate": 119.87930546543257,
+                  "total": 51200.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_e2e_seconds": {
+            "description": "Wall from request arrival to generation complete.",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.100": 0,
+                  "0.250": 0,
+                  "0.500": 0,
+                  "1.000": 0,
+                  "10.000": 0,
+                  "2.500": 0,
+                  "30.000": 0,
+                  "300.000": 0,
+                  "5.000": 0,
+                  "60.000": 0
+                },
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "count": 0
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 100,
+                  "0.100": 0,
+                  "0.250": 0,
+                  "0.500": 0,
+                  "1.000": 0,
+                  "10.000": 0,
+                  "2.500": 0,
+                  "30.000": 6,
+                  "300.000": 100,
+                  "5.000": 0,
+                  "60.000": 100
+                },
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "avg": 33.51478872,
+                  "count": 100,
+                  "count_rate": 0.23413926848717298,
+                  "p10_estimate": 30.0,
+                  "p1_estimate": 12.978067715680263,
+                  "p25_estimate": 30.147286776980728,
+                  "p50_estimate": 32.526852155092996,
+                  "p5_estimate": 26.871869495680283,
+                  "p75_estimate": 38.03388881978727,
+                  "p90_estimate": 41.596936028527864,
+                  "p95_estimate": 42.78461843144139,
+                  "p99_estimate": 43.73476435377221,
+                  "sum": 3351.478872,
+                  "sum_rate": 7.847128114402957
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.100": 0,
+                  "0.250": 0,
+                  "0.500": 0,
+                  "1.000": 0,
+                  "10.000": 0,
+                  "2.500": 0,
+                  "30.000": 0,
+                  "300.000": 0,
+                  "5.000": 0,
+                  "60.000": 0
+                },
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "count": 0
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.100": 0,
+                  "0.250": 0,
+                  "0.500": 0,
+                  "1.000": 0,
+                  "10.000": 0,
+                  "2.500": 0,
+                  "30.000": 0,
+                  "300.000": 0,
+                  "5.000": 0,
+                  "60.000": 0
+                },
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "count": 0
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "q27_itl_seconds": {
+            "description": "Per-request mean inter-token latency (dec_ms / dec).",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.001": 0,
+                  "0.002": 0,
+                  "0.003": 0,
+                  "0.004": 0,
+                  "0.005": 0,
+                  "0.008": 0,
+                  "0.010": 0,
+                  "0.015": 0,
+                  "0.020": 0,
+                  "0.050": 0,
+                  "0.100": 0
+                },
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "count": 0
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 100,
+                  "0.001": 0,
+                  "0.002": 0,
+                  "0.003": 0,
+                  "0.004": 0,
+                  "0.005": 0,
+                  "0.008": 0,
+                  "0.010": 3,
+                  "0.015": 3,
+                  "0.020": 6,
+                  "0.050": 92,
+                  "0.100": 100
+                },
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "avg": 0.030534370000000005,
+                  "count": 100,
+                  "count_rate": 0.23413926848717298,
+                  "p10_estimate": 0.02,
+                  "p1_estimate": 0.00924956374440619,
+                  "p25_estimate": 0.023161100058952055,
+                  "p50_estimate": 0.028581516280788706,
+                  "p5_estimate": 0.018601085448321217,
+                  "p75_estimate": 0.03641657912873628,
+                  "p90_estimate": 0.04111761683750483,
+                  "p95_estimate": 0.05269692849200303,
+                  "p99_estimate": 0.06220925243380295,
+                  "sum": 3.0534370000000006,
+                  "sum_rate": 0.0071492950555166815
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.001": 0,
+                  "0.002": 0,
+                  "0.003": 0,
+                  "0.004": 0,
+                  "0.005": 0,
+                  "0.008": 0,
+                  "0.010": 0,
+                  "0.015": 0,
+                  "0.020": 0,
+                  "0.050": 0,
+                  "0.100": 0
+                },
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "count": 0
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.001": 0,
+                  "0.002": 0,
+                  "0.003": 0,
+                  "0.004": 0,
+                  "0.005": 0,
+                  "0.008": 0,
+                  "0.010": 0,
+                  "0.015": 0,
+                  "0.020": 0,
+                  "0.050": 0,
+                  "0.100": 0
+                },
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "count": 0
+                }
+              }
+            ],
+            "type": "histogram"
+          },
+          "q27_kv_usage_perc": {
+            "description": "Paged KV pool occupancy (0-1).",
+            "series": [
+              {
+                "stats": {
+                  "avg": 0.11768199999999998,
+                  "max": 0.117682,
+                  "min": 0.117682,
+                  "p1": 0.117682,
+                  "p10": 0.117682,
+                  "p25": 0.117682,
+                  "p5": 0.117682,
+                  "p50": 0.117682,
+                  "p75": 0.117682,
+                  "p90": 0.117682,
+                  "p95": 0.117682,
+                  "p99": 0.117682,
+                  "std": 1.3883195089456547e-17
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "q27_preemptions": {
+            "description": "Cumulative preemptions (q27 never preempts; FIFO queue).",
+            "series": [
+              {
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_prefill_cached_tokens": {
+            "description": "Prompt tokens served from the prefix cache (RAM or disk).",
+            "series": [
+              {
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_prefill_cached_tokens_processed": {
+            "description": "Prefill tokens served from cache (live, cumulative).",
+            "series": [
+              {
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_prefill_computed_tokens": {
+            "description": "Prompt tokens actually computed (not served from prefix cache).",
+            "series": [
+              {
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "rate": 1918.068887446921,
+                  "total": 819200.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_prefill_computed_tokens_processed": {
+            "description": "Prefill tokens computed (live, cumulative).",
+            "series": [
+              {
+                "stats": {
+                  "rate": 1918.068887446921,
+                  "total": 819200.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_prompt_tokens": {
+            "description": "Prompt tokens sent to prefill (incl. cached).",
+            "series": [
+              {
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "rate": 1918.068887446921,
+                  "total": 819200.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_queue_wait_seconds": {
+            "description": "Sum of queue wait (slot claim) across requests.",
+            "series": [
+              {
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "rate": 0.2760575963472612,
+                  "total": 117.90316000000001
+                }
+              },
+              {
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_requests": {
+            "description": "Generation requests ([req] universe).",
+            "series": [
+              {
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "rate": 0.23413926848717298,
+                  "total": 100.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_requests_errors": {
+            "description": "Generation requests ending end=error.",
+            "series": [
+              {
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              },
+              {
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "rate": 0.0,
+                  "total": 0.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_requests_inflight": {
+            "description": "Slots currently claimed by a generation.",
+            "series": [
+              {
+                "stats": {
+                  "avg": 7.835669781931464,
+                  "max": 8.0,
+                  "min": 0.0,
+                  "p1": 4.0,
+                  "p10": 8.0,
+                  "p25": 8.0,
+                  "p5": 8.0,
+                  "p50": 8.0,
+                  "p75": 8.0,
+                  "p90": 8.0,
+                  "p95": 8.0,
+                  "p99": 8.0,
+                  "std": 0.905653122945946
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "q27_slots_total": {
+            "description": "Configured serving slots.",
+            "series": [
+              {
+                "stats": {
+                  "avg": 8.0,
+                  "max": 8.0,
+                  "min": 8.0,
+                  "p1": 8.0,
+                  "p10": 8.0,
+                  "p25": 8.0,
+                  "p5": 8.0,
+                  "p50": 8.0,
+                  "p75": 8.0,
+                  "p90": 8.0,
+                  "p95": 8.0,
+                  "p99": 8.0,
+                  "std": 0.0
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "q27_spec_accept_ratio": {
+            "description": "Cumulative MTP accept ratio (accepted / drafted).",
+            "series": [
+              {
+                "stats": {
+                  "avg": 0.6222038294392523,
+                  "max": 0.631295,
+                  "min": 0.605197,
+                  "p1": 0.605664,
+                  "p10": 0.606911,
+                  "p25": 0.6201304999999999,
+                  "p5": 0.605664,
+                  "p50": 0.622812,
+                  "p75": 0.627993,
+                  "p90": 0.630223,
+                  "p95": 0.630912,
+                  "p99": 0.631295,
+                  "std": 0.007551728102500622
+                }
+              }
+            ],
+            "type": "gauge"
+          },
+          "q27_spec_accepted_tokens": {
+            "description": "Cumulative MTP draft lanes accepted (accept gate).",
+            "series": [
+              {
+                "stats": {
+                  "rate": 1.741996157544567,
+                  "total": 744.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_spec_draft_tokens": {
+            "description": "Cumulative MTP draft lanes fired (accept gate).",
+            "series": [
+              {
+                "stats": {
+                  "rate": 2.2758336896953213,
+                  "total": 972.0
+                }
+              }
+            ],
+            "type": "counter"
+          },
+          "q27_ttft_seconds": {
+            "description": "Pre-fill wall per request (first-token latency proxy).",
+            "series": [
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.010": 0,
+                  "0.050": 0,
+                  "0.100": 0,
+                  "0.250": 0,
+                  "0.500": 0,
+                  "1.000": 0,
+                  "10.000": 0,
+                  "2.500": 0,
+                  "30.000": 0,
+                  "5.000": 0,
+                  "60.000": 0
+                },
+                "labels": {
+                  "api": "chat"
+                },
+                "stats": {
+                  "count": 0
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 100,
+                  "0.010": 0,
+                  "0.050": 0,
+                  "0.100": 0,
+                  "0.250": 0,
+                  "0.500": 0,
+                  "1.000": 0,
+                  "10.000": 12,
+                  "2.500": 0,
+                  "30.000": 100,
+                  "5.000": 6,
+                  "60.000": 100
+                },
+                "labels": {
+                  "api": "completions"
+                },
+                "stats": {
+                  "avg": 16.69940204,
+                  "count": 100,
+                  "count_rate": 0.23413926848717298,
+                  "p10_estimate": 8.769052088888849,
+                  "p1_estimate": 3.1240286383332556,
+                  "p25_estimate": 12.583710386574689,
+                  "p50_estimate": 17.10093526140483,
+                  "p5_estimate": 4.772012808333304,
+                  "p75_estimate": 21.618160136234966,
+                  "p90_estimate": 24.32849506113305,
+                  "p95_estimate": 25.231940036099072,
+                  "p99_estimate": 25.9546960160719,
+                  "sum": 1669.9402039999998,
+                  "sum_rate": 3.909985777818804
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.010": 0,
+                  "0.050": 0,
+                  "0.100": 0,
+                  "0.250": 0,
+                  "0.500": 0,
+                  "1.000": 0,
+                  "10.000": 0,
+                  "2.500": 0,
+                  "30.000": 0,
+                  "5.000": 0,
+                  "60.000": 0
+                },
+                "labels": {
+                  "api": "messages"
+                },
+                "stats": {
+                  "count": 0
+                }
+              },
+              {
+                "buckets": {
+                  "+Inf": 0,
+                  "0.010": 0,
+                  "0.050": 0,
+                  "0.100": 0,
+                  "0.250": 0,
+                  "0.500": 0,
+                  "1.000": 0,
+                  "10.000": 0,
+                  "2.500": 0,
+                  "30.000": 0,
+                  "5.000": 0,
+                  "60.000": 0
+                },
+                "labels": {
+                  "api": "responses"
+                },
+                "stats": {
+                  "count": 0
+                }
+              }
+            ],
+            "type": "histogram"
+          }
+        }
+      }
+    },
+    "endpoints_configured": [
+      "http://127.0.0.1:8088/metrics"
+    ],
+    "endpoints_successful": [
+      "http://127.0.0.1:8088/metrics"
+    ],
+    "error_summary": [],
+    "phase": "profiling",
+    "phase_index": 1,
+    "phase_kind": "profiling",
+    "phase_name": "profiling",
+    "phase_results": [],
+    "profiling_index": 0,
+    "start_ns": 1792173055606837119
+  },
+  "phase": {
+    "end_ns": 1792173480680980402,
+    "phase_index": 1,
+    "phase_kind": "profiling",
+    "phase_name": "profiling",
+    "profiling_index": 0,
+    "start_ns": 1792173055586273924,
+    "was_cancelled": false
+  },
+  "schema_version": 1,
+  "warnings": []
+}

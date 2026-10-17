@@ -1,2 +1,5 @@
 # Unified diff context lines contain a required leading space.
 *.patch -whitespace
+# Preserve the exact bytes of archived native exports.
+evidence/**/*.prom -whitespace
+evidence/**/server_command.sh -whitespace

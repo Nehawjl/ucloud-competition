@@ -1,0 +1,245 @@
+# HELP q27_requests_total Generation requests ([req] universe).
+# TYPE q27_requests_total counter
+q27_requests_total{api="chat"} 0
+q27_requests_total{api="completions"} 437
+q27_requests_total{api="messages"} 0
+q27_requests_total{api="responses"} 0
+# HELP q27_requests_errors_total Generation requests ending end=error.
+# TYPE q27_requests_errors_total counter
+q27_requests_errors_total{api="chat"} 0
+q27_requests_errors_total{api="completions"} 0
+q27_requests_errors_total{api="messages"} 0
+q27_requests_errors_total{api="responses"} 0
+# HELP q27_prompt_tokens_total Prompt tokens sent to prefill (incl. cached).
+# TYPE q27_prompt_tokens_total counter
+q27_prompt_tokens_total{api="chat"} 0
+q27_prompt_tokens_total{api="completions"} 3547172
+q27_prompt_tokens_total{api="messages"} 0
+q27_prompt_tokens_total{api="responses"} 0
+# HELP q27_prefill_computed_tokens_total Prompt tokens actually computed (not served from prefix cache).
+# TYPE q27_prefill_computed_tokens_total counter
+q27_prefill_computed_tokens_total{api="chat"} 0
+q27_prefill_computed_tokens_total{api="completions"} 3547172
+q27_prefill_computed_tokens_total{api="messages"} 0
+q27_prefill_computed_tokens_total{api="responses"} 0
+# HELP q27_prefill_cached_tokens_total Prompt tokens served from the prefix cache (RAM or disk).
+# TYPE q27_prefill_cached_tokens_total counter
+q27_prefill_cached_tokens_total{api="chat"} 0
+q27_prefill_cached_tokens_total{api="completions"} 0
+q27_prefill_cached_tokens_total{api="messages"} 0
+q27_prefill_cached_tokens_total{api="responses"} 0
+# HELP q27_decode_tokens_total Generated tokens delivered.
+# TYPE q27_decode_tokens_total counter
+q27_decode_tokens_total{api="chat"} 0
+q27_decode_tokens_total{api="completions"} 221249
+q27_decode_tokens_total{api="messages"} 0
+q27_decode_tokens_total{api="responses"} 0
+# HELP q27_queue_wait_seconds_total Sum of queue wait (slot claim) across requests.
+# TYPE q27_queue_wait_seconds_total counter
+q27_queue_wait_seconds_total{api="chat"} 0.000000
+q27_queue_wait_seconds_total{api="completions"} 160.793405
+q27_queue_wait_seconds_total{api="messages"} 0.000000
+q27_queue_wait_seconds_total{api="responses"} 0.000000
+# HELP q27_ttft_seconds Pre-fill wall per request (first-token latency proxy).
+# TYPE q27_ttft_seconds histogram
+q27_ttft_seconds_bucket{api="chat",le="0.010"} 0
+q27_ttft_seconds_bucket{api="chat",le="0.050"} 0
+q27_ttft_seconds_bucket{api="chat",le="0.100"} 0
+q27_ttft_seconds_bucket{api="chat",le="0.250"} 0
+q27_ttft_seconds_bucket{api="chat",le="0.500"} 0
+q27_ttft_seconds_bucket{api="chat",le="1.000"} 0
+q27_ttft_seconds_bucket{api="chat",le="2.500"} 0
+q27_ttft_seconds_bucket{api="chat",le="5.000"} 0
+q27_ttft_seconds_bucket{api="chat",le="10.000"} 0
+q27_ttft_seconds_bucket{api="chat",le="30.000"} 0
+q27_ttft_seconds_bucket{api="chat",le="60.000"} 0
+q27_ttft_seconds_bucket{api="chat",le="+Inf"} 0
+q27_ttft_seconds_sum{api="chat"} 0.000000
+q27_ttft_seconds_count{api="chat"} 0
+q27_ttft_seconds_bucket{api="completions",le="0.010"} 0
+q27_ttft_seconds_bucket{api="completions",le="0.050"} 0
+q27_ttft_seconds_bucket{api="completions",le="0.100"} 4
+q27_ttft_seconds_bucket{api="completions",le="0.250"} 4
+q27_ttft_seconds_bucket{api="completions",le="0.500"} 4
+q27_ttft_seconds_bucket{api="completions",le="1.000"} 4
+q27_ttft_seconds_bucket{api="completions",le="2.500"} 4
+q27_ttft_seconds_bucket{api="completions",le="5.000"} 281
+q27_ttft_seconds_bucket{api="completions",le="10.000"} 328
+q27_ttft_seconds_bucket{api="completions",le="30.000"} 437
+q27_ttft_seconds_bucket{api="completions",le="60.000"} 437
+q27_ttft_seconds_bucket{api="completions",le="+Inf"} 437
+q27_ttft_seconds_sum{api="completions"} 3174.948509
+q27_ttft_seconds_count{api="completions"} 437
+q27_ttft_seconds_bucket{api="messages",le="0.010"} 0
+q27_ttft_seconds_bucket{api="messages",le="0.050"} 0
+q27_ttft_seconds_bucket{api="messages",le="0.100"} 0
+q27_ttft_seconds_bucket{api="messages",le="0.250"} 0
+q27_ttft_seconds_bucket{api="messages",le="0.500"} 0
+q27_ttft_seconds_bucket{api="messages",le="1.000"} 0
+q27_ttft_seconds_bucket{api="messages",le="2.500"} 0
+q27_ttft_seconds_bucket{api="messages",le="5.000"} 0
+q27_ttft_seconds_bucket{api="messages",le="10.000"} 0
+q27_ttft_seconds_bucket{api="messages",le="30.000"} 0
+q27_ttft_seconds_bucket{api="messages",le="60.000"} 0
+q27_ttft_seconds_bucket{api="messages",le="+Inf"} 0
+q27_ttft_seconds_sum{api="messages"} 0.000000
+q27_ttft_seconds_count{api="messages"} 0
+q27_ttft_seconds_bucket{api="responses",le="0.010"} 0
+q27_ttft_seconds_bucket{api="responses",le="0.050"} 0
+q27_ttft_seconds_bucket{api="responses",le="0.100"} 0
+q27_ttft_seconds_bucket{api="responses",le="0.250"} 0
+q27_ttft_seconds_bucket{api="responses",le="0.500"} 0
+q27_ttft_seconds_bucket{api="responses",le="1.000"} 0
+q27_ttft_seconds_bucket{api="responses",le="2.500"} 0
+q27_ttft_seconds_bucket{api="responses",le="5.000"} 0
+q27_ttft_seconds_bucket{api="responses",le="10.000"} 0
+q27_ttft_seconds_bucket{api="responses",le="30.000"} 0
+q27_ttft_seconds_bucket{api="responses",le="60.000"} 0
+q27_ttft_seconds_bucket{api="responses",le="+Inf"} 0
+q27_ttft_seconds_sum{api="responses"} 0.000000
+q27_ttft_seconds_count{api="responses"} 0
+# HELP q27_e2e_seconds Wall from request arrival to generation complete.
+# TYPE q27_e2e_seconds histogram
+q27_e2e_seconds_bucket{api="chat",le="0.100"} 0
+q27_e2e_seconds_bucket{api="chat",le="0.250"} 0
+q27_e2e_seconds_bucket{api="chat",le="0.500"} 0
+q27_e2e_seconds_bucket{api="chat",le="1.000"} 0
+q27_e2e_seconds_bucket{api="chat",le="2.500"} 0
+q27_e2e_seconds_bucket{api="chat",le="5.000"} 0
+q27_e2e_seconds_bucket{api="chat",le="10.000"} 0
+q27_e2e_seconds_bucket{api="chat",le="30.000"} 0
+q27_e2e_seconds_bucket{api="chat",le="60.000"} 0
+q27_e2e_seconds_bucket{api="chat",le="300.000"} 0
+q27_e2e_seconds_bucket{api="chat",le="+Inf"} 0
+q27_e2e_seconds_sum{api="chat"} 0.000000
+q27_e2e_seconds_count{api="chat"} 0
+q27_e2e_seconds_bucket{api="completions",le="0.100"} 0
+q27_e2e_seconds_bucket{api="completions",le="0.250"} 0
+q27_e2e_seconds_bucket{api="completions",le="0.500"} 4
+q27_e2e_seconds_bucket{api="completions",le="1.000"} 4
+q27_e2e_seconds_bucket{api="completions",le="2.500"} 4
+q27_e2e_seconds_bucket{api="completions",le="5.000"} 112
+q27_e2e_seconds_bucket{api="completions",le="10.000"} 219
+q27_e2e_seconds_bucket{api="completions",le="30.000"} 335
+q27_e2e_seconds_bucket{api="completions",le="60.000"} 437
+q27_e2e_seconds_bucket{api="completions",le="300.000"} 437
+q27_e2e_seconds_bucket{api="completions",le="+Inf"} 437
+q27_e2e_seconds_sum{api="completions"} 6916.648843
+q27_e2e_seconds_count{api="completions"} 437
+q27_e2e_seconds_bucket{api="messages",le="0.100"} 0
+q27_e2e_seconds_bucket{api="messages",le="0.250"} 0
+q27_e2e_seconds_bucket{api="messages",le="0.500"} 0
+q27_e2e_seconds_bucket{api="messages",le="1.000"} 0
+q27_e2e_seconds_bucket{api="messages",le="2.500"} 0
+q27_e2e_seconds_bucket{api="messages",le="5.000"} 0
+q27_e2e_seconds_bucket{api="messages",le="10.000"} 0
+q27_e2e_seconds_bucket{api="messages",le="30.000"} 0
+q27_e2e_seconds_bucket{api="messages",le="60.000"} 0
+q27_e2e_seconds_bucket{api="messages",le="300.000"} 0
+q27_e2e_seconds_bucket{api="messages",le="+Inf"} 0
+q27_e2e_seconds_sum{api="messages"} 0.000000
+q27_e2e_seconds_count{api="messages"} 0
+q27_e2e_seconds_bucket{api="responses",le="0.100"} 0
+q27_e2e_seconds_bucket{api="responses",le="0.250"} 0
+q27_e2e_seconds_bucket{api="responses",le="0.500"} 0
+q27_e2e_seconds_bucket{api="responses",le="1.000"} 0
+q27_e2e_seconds_bucket{api="responses",le="2.500"} 0
+q27_e2e_seconds_bucket{api="responses",le="5.000"} 0
+q27_e2e_seconds_bucket{api="responses",le="10.000"} 0
+q27_e2e_seconds_bucket{api="responses",le="30.000"} 0
+q27_e2e_seconds_bucket{api="responses",le="60.000"} 0
+q27_e2e_seconds_bucket{api="responses",le="300.000"} 0
+q27_e2e_seconds_bucket{api="responses",le="+Inf"} 0
+q27_e2e_seconds_sum{api="responses"} 0.000000
+q27_e2e_seconds_count{api="responses"} 0
+# HELP q27_itl_seconds Per-request mean inter-token latency (dec_ms / dec).
+# TYPE q27_itl_seconds histogram
+q27_itl_seconds_bucket{api="chat",le="0.001"} 0
+q27_itl_seconds_bucket{api="chat",le="0.002"} 0
+q27_itl_seconds_bucket{api="chat",le="0.003"} 0
+q27_itl_seconds_bucket{api="chat",le="0.004"} 0
+q27_itl_seconds_bucket{api="chat",le="0.005"} 0
+q27_itl_seconds_bucket{api="chat",le="0.008"} 0
+q27_itl_seconds_bucket{api="chat",le="0.010"} 0
+q27_itl_seconds_bucket{api="chat",le="0.015"} 0
+q27_itl_seconds_bucket{api="chat",le="0.020"} 0
+q27_itl_seconds_bucket{api="chat",le="0.050"} 0
+q27_itl_seconds_bucket{api="chat",le="0.100"} 0
+q27_itl_seconds_bucket{api="chat",le="+Inf"} 0
+q27_itl_seconds_sum{api="chat"} 0.000000
+q27_itl_seconds_count{api="chat"} 0
+q27_itl_seconds_bucket{api="completions",le="0.001"} 0
+q27_itl_seconds_bucket{api="completions",le="0.002"} 0
+q27_itl_seconds_bucket{api="completions",le="0.003"} 107
+q27_itl_seconds_bucket{api="completions",le="0.004"} 107
+q27_itl_seconds_bucket{api="completions",le="0.005"} 121
+q27_itl_seconds_bucket{api="completions",le="0.008"} 143
+q27_itl_seconds_bucket{api="completions",le="0.010"} 172
+q27_itl_seconds_bucket{api="completions",le="0.015"} 239
+q27_itl_seconds_bucket{api="completions",le="0.020"} 255
+q27_itl_seconds_bucket{api="completions",le="0.050"} 429
+q27_itl_seconds_bucket{api="completions",le="0.100"} 437
+q27_itl_seconds_bucket{api="completions",le="+Inf"} 437
+q27_itl_seconds_sum{api="completions"} 7.068964
+q27_itl_seconds_count{api="completions"} 437
+q27_itl_seconds_bucket{api="messages",le="0.001"} 0
+q27_itl_seconds_bucket{api="messages",le="0.002"} 0
+q27_itl_seconds_bucket{api="messages",le="0.003"} 0
+q27_itl_seconds_bucket{api="messages",le="0.004"} 0
+q27_itl_seconds_bucket{api="messages",le="0.005"} 0
+q27_itl_seconds_bucket{api="messages",le="0.008"} 0
+q27_itl_seconds_bucket{api="messages",le="0.010"} 0
+q27_itl_seconds_bucket{api="messages",le="0.015"} 0
+q27_itl_seconds_bucket{api="messages",le="0.020"} 0
+q27_itl_seconds_bucket{api="messages",le="0.050"} 0
+q27_itl_seconds_bucket{api="messages",le="0.100"} 0
+q27_itl_seconds_bucket{api="messages",le="+Inf"} 0
+q27_itl_seconds_sum{api="messages"} 0.000000
+q27_itl_seconds_count{api="messages"} 0
+q27_itl_seconds_bucket{api="responses",le="0.001"} 0
+q27_itl_seconds_bucket{api="responses",le="0.002"} 0
+q27_itl_seconds_bucket{api="responses",le="0.003"} 0
+q27_itl_seconds_bucket{api="responses",le="0.004"} 0
+q27_itl_seconds_bucket{api="responses",le="0.005"} 0
+q27_itl_seconds_bucket{api="responses",le="0.008"} 0
+q27_itl_seconds_bucket{api="responses",le="0.010"} 0
+q27_itl_seconds_bucket{api="responses",le="0.015"} 0
+q27_itl_seconds_bucket{api="responses",le="0.020"} 0
+q27_itl_seconds_bucket{api="responses",le="0.050"} 0
+q27_itl_seconds_bucket{api="responses",le="0.100"} 0
+q27_itl_seconds_bucket{api="responses",le="+Inf"} 0
+q27_itl_seconds_sum{api="responses"} 0.000000
+q27_itl_seconds_count{api="responses"} 0
+# HELP q27_requests_inflight Slots currently claimed by a generation.
+# TYPE q27_requests_inflight gauge
+q27_requests_inflight 0
+# HELP q27_slots_total Configured serving slots.
+# TYPE q27_slots_total gauge
+q27_slots_total 8
+# HELP q27_kv_usage_perc Paged KV pool occupancy (0-1).
+# TYPE q27_kv_usage_perc gauge
+q27_kv_usage_perc 0.117682
+# HELP q27_spec_draft_tokens_total Cumulative MTP draft lanes fired (accept gate).
+# TYPE q27_spec_draft_tokens_total counter
+q27_spec_draft_tokens_total 6163
+# HELP q27_spec_accepted_tokens_total Cumulative MTP draft lanes accepted (accept gate).
+# TYPE q27_spec_accepted_tokens_total counter
+q27_spec_accepted_tokens_total 3888
+# HELP q27_decode_tokens_processed_total Tokens delivered during decode (live, cumulative).
+# TYPE q27_decode_tokens_processed_total counter
+q27_decode_tokens_processed_total 221249
+# HELP q27_prefill_computed_tokens_processed_total Prefill tokens computed (live, cumulative).
+# TYPE q27_prefill_computed_tokens_processed_total counter
+q27_prefill_computed_tokens_processed_total 3547172
+# HELP q27_prefill_cached_tokens_processed_total Prefill tokens served from cache (live, cumulative).
+# TYPE q27_prefill_cached_tokens_processed_total counter
+q27_prefill_cached_tokens_processed_total 0
+# HELP q27_preemptions_total Cumulative preemptions (q27 never preempts; FIFO queue).
+# TYPE q27_preemptions_total counter
+q27_preemptions_total 0
+# HELP q27_spec_accept_ratio Cumulative MTP accept ratio (accepted / drafted).
+# TYPE q27_spec_accept_ratio gauge
+q27_spec_accept_ratio 0.630862
+# HELP q27_uptime_seconds Server uptime.
+# TYPE q27_uptime_seconds gauge
+q27_uptime_seconds 1906.67

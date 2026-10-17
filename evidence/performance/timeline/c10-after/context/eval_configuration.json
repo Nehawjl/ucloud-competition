@@ -1,0 +1,19 @@
+{
+  "mode": "targeted-perf",
+  "base_url": "http://127.0.0.1:8088/v1",
+  "model": "qwen3.8-27b",
+  "tokenizer": "builtin",
+  "output_dir": "/root/ucloud-com-runs/20261017T114432Z-hyperqwen-cscan/eval/cells/c10",
+  "env_dir": "/root/.cache/ai-infra-eval/envs",
+  "perf_requests": 100,
+  "request_timeout": 600.0,
+  "seed": 42,
+  "isl": 8192,
+  "osl": 512,
+  "concurrencies": [
+    10
+  ],
+  "warmup_requests": 8,
+  "dataset_sha256": "6a05165bed397b38859476e41b89b4c427e5f85951de4bd40d591c95b5d24655",
+  "official_runner_sha256": "d80df390cf6d1d50129796b31fdd7f4d1e95d0043d3b942d47ac582118702fb0"
+}

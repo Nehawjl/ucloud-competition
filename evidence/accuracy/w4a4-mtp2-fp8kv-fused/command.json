@@ -1,0 +1,6 @@
+[
+  "/root/.cache/ai-infra-eval/envs/evalscope-1.13.0/bin/python",
+  "/root/ucloud-com-sources/20261017T214914Z-hyperqwen-w4a4-mtp2-fp8-ifbench100/third_party/official-eval/runner.py",
+  "_accuracy",
+  "/root/ucloud-com-runs/20261017T214914Z-hyperqwen-w4a4-mtp2-fp8-ifbench100/arms/triton/eval/accuracy/task_config.json"
+]

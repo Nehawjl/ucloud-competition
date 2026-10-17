@@ -1,0 +1,2 @@
+source_url=https://codeload.github.com/syv-ai/HyperQwen/tar.gz/95ee3b64b0df7014ee2626529524d6b99c3dcdd1
+archive_sha256=910832282a4d475a284e760d87a44bc3608c1498aab4a4a8459ef2319a39561c

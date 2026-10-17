@@ -1,0 +1,42 @@
+{
+  "status": "完整",
+  "issues": [],
+  "concurrency": 4,
+  "expected_requests": 100,
+  "records": 100,
+  "valid_records": 100,
+  "successful_requests": 100.0,
+  "error_requests": 0,
+  "lengths_verified": true,
+  "osl_verified": true,
+  "input_length_basis": "tiktoken/o200k_base",
+  "actual_input_tokens": {
+    "min": 8192,
+    "max": 8192,
+    "mean": 8192.0
+  },
+  "metrics": {
+    "time_to_first_token": {
+      "mean": 3601.74835163,
+      "p50": 3064.181802,
+      "p95": 5961.434030799997,
+      "p99": 9886.327963160009
+    },
+    "inter_token_latency": {
+      "mean": 21.683987200450098,
+      "p50": 22.163727555772994,
+      "p95": 29.326991409295495,
+      "p99": 35.389839834755406
+    },
+    "request_latency": {
+      "mean": 14682.265811059999,
+      "p50": 14422.496015499999,
+      "p95": 18951.277800049997,
+      "p99": 21148.72707189001
+    }
+  },
+  "benchmark_duration": 368.528250624,
+  "request_throughput": 0.2713457403079114,
+  "output_token_throughput": 138.92901903765065,
+  "artifacts": "/root/ucloud-com-runs/20261016T204716Z-hyperqwen-perf/eval/performance/c4"
+}

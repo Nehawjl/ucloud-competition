@@ -1,0 +1,10 @@
+source_url=https://codeload.github.com/syv-ai/HyperQwen/tar.gz/95ee3b64b0df7014ee2626529524d6b99c3dcdd1
+archive_sha256=910832282a4d475a284e760d87a44bc3608c1498aab4a4a8459ef2319a39561c
+target_baseline_result=results/20261017T000201Z-hyperqwen-w4a8-perf
+target_dataset_sha256=6a05165bed397b38859476e41b89b4c427e5f85951de4bd40d591c95b5d24655
+hyperqwen_tuner_commit=75d8e1089b2df4403a36198a120da3bf6bc0dbff
+vllm_commit=db9527a46873454610df6dbedf79a36d6bf1a7f6
+perc_concurrencies=11,12
+perc_variants=tuned
+max_num_batched_tokens=1024
+cg_formula=ceil_8(4*C)_capped_64

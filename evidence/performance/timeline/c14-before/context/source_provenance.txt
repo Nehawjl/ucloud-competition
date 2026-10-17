@@ -1,0 +1,17 @@
+run_id=20261017T165130Z-hyperqwen-w4a4-mtp2-1536-s1408-c14-c16
+baseline_run=20261017T150656Z-hyperqwen-w4a4-mtp2
+selected_run=20261017T163141Z-hyperqwen-w4a4-mtp2-1536-tpot-scan
+concurrencies=14,16
+max_num_batched_tokens=1536
+max_num_scheduled_tokens=1408
+model=prepared-fast-w4a4g
+draft_tokens=2
+mtp_draft_vocab=default-40960
+max_num_seqs=concurrency
+cg=3*concurrency
+capture_sizes=default-plus-exact-mtp2-multiples
+perf_requests=100
+warmup_requests=8
+seed=42
+dataset_sha256=6a05165bed397b38859476e41b89b4c427e5f85951de4bd40d591c95b5d24655
+official_runner_sha256=d80df390cf6d1d50129796b31fdd7f4d1e95d0043d3b942d47ac582118702fb0

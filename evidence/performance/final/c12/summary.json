@@ -1,0 +1,42 @@
+{
+  "status": "完整",
+  "issues": [],
+  "concurrency": 12,
+  "expected_requests": 100,
+  "records": 100,
+  "valid_records": 100,
+  "successful_requests": 100.0,
+  "error_requests": 0,
+  "lengths_verified": true,
+  "osl_verified": true,
+  "input_length_basis": "tiktoken/o200k_base",
+  "actual_input_tokens": {
+    "min": 8192,
+    "max": 8192,
+    "mean": 8192.0
+  },
+  "metrics": {
+    "time_to_first_token": {
+      "mean": 2316.93571382,
+      "p50": 1306.4478735,
+      "p95": 7352.753576199997,
+      "p99": 11564.684078520004
+    },
+    "inter_token_latency": {
+      "mean": 27.391706814735812,
+      "p50": 27.320725422700583,
+      "p95": 35.587926434931504,
+      "p99": 40.0919036585519
+    },
+    "request_latency": {
+      "mean": 16314.097896149999,
+      "p50": 16133.584973,
+      "p95": 22529.8891337,
+      "p99": 25321.619081000004
+    }
+  },
+  "benchmark_duration": 138.323590144,
+  "request_throughput": 0.7229138893233741,
+  "output_token_throughput": 370.13191133356753,
+  "artifacts": "/root/ucloud-com-runs/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c12/eval/cells/c12/performance/c12"
+}

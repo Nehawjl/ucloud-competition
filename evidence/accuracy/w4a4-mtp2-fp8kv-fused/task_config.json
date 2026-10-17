@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.8-27b",
+  "api_url": "http://127.0.0.1:18099/v1",
+  "api_key_env": "OPENAI_API_KEY",
+  "eval_type": "openai_api",
+  "datasets": [
+    "ifbench"
+  ],
+  "limit": 100,
+  "eval_batch_size": 2,
+  "generation_config": {
+    "max_tokens": 32768
+  },
+  "work_dir": "/root/ucloud-com-runs/20261017T214914Z-hyperqwen-w4a4-mtp2-fp8-ifbench100/arms/triton/eval/accuracy/native",
+  "no_timestamp": true
+}

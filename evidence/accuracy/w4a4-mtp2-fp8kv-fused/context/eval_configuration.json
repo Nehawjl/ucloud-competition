@@ -1,0 +1,28 @@
+{
+  "mode": "accuracy",
+  "base_url": "http://127.0.0.1:18099/v1",
+  "model": "qwen3.8-27b",
+  "tokenizer": "builtin",
+  "tokenizer_revision": null,
+  "api_key_env": "OPENAI_API_KEY",
+  "output_dir": "/root/ucloud-com-runs/20261017T214914Z-hyperqwen-w4a4-mtp2-fp8-ifbench100/arms/triton/eval",
+  "env_dir": "/root/.cache/ai-infra-eval/envs",
+  "perf_requests": 100,
+  "eval_batch_size": 2,
+  "request_timeout": 600,
+  "seed": 42,
+  "dry_run": false,
+  "isl": 8192,
+  "osl": 512,
+  "concurrencies": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "warmup_requests": 8,
+  "accuracy_limit": 100,
+  "accuracy_generation_config": {
+    "max_tokens": 32768
+  }
+}

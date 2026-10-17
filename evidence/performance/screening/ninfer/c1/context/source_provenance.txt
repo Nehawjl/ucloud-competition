@@ -1,0 +1,2 @@
+source_url=https://codeload.github.com/sergiuszm/ninfer-4090/tar.gz/fdb7a6cf3284770b9609ef7b3eac873f84e3849f
+archive_sha256=cf366f066faa1661fdf269d40e03f1662ef5391e7f50829d45b415a88c5f326c

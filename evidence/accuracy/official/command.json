@@ -1,0 +1,6 @@
+[
+  "/root/.cache/ai-infra-eval/envs/evalscope-1.13.0/bin/python",
+  "/root/ucloud-com-sources/20261016T145455Z-baseline-accuracy-no-timeout/third_party/official-eval/runner.py",
+  "_accuracy",
+  "/root/ucloud-com-runs/20261016T145455Z-baseline-accuracy-no-timeout/eval/accuracy/task_config.json"
+]
