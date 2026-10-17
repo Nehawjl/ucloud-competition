@@ -36,8 +36,10 @@
 
 以下命令在复现 GPU 机器执行。安装目录默认是本仓库下的 `.runtime/`；也可以先设置绝对路径 `WORK_DIR`。建议预留至少 80 GiB 磁盘空间，模型准备过程中保留下载副本和准备副本。
 
+先为复现账号配置仓库读取权限，以下使用已授权的 SSH 克隆。文件交付时也可使用 `git clone --branch main ucloud-competition.bundle ucloud-competition`，无需复制维护者私钥。
+
 ```bash
-git clone https://github.com/Nehawjl/ucloud-competition.git
+git clone git@github.com:Nehawjl/ucloud-competition.git
 cd ucloud-competition
 
 export CUDA_HOME=/usr/local/cuda-13.0

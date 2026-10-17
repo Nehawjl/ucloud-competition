@@ -54,21 +54,24 @@ q27、NInfer 的双 SLO 通过档位为 C1/C2；HyperQwen 为 C1/C2/C4。选择 
 
 EvalScope 1.13.0，IFBench 前 100 题，`eval_batch_size=2`，`max_tokens=32768`。保留四项原生指标：
 
-| 权重 | 激活 | KV cache | Prompt strict | Instruction strict | Prompt loose | Instruction loose |
-|---|---|---|---:|---:|---:|---:|
-| FP8 | BF16 | FP8 | 80.00% | 80.18% | 87.00% | 87.39% |
-| INT4 | INT8 | BF16 | 80.00% | 81.98% | 88.00% | 89.19% |
-| INT4 | INT4 | BF16 | 77.00% | 77.48% | 87.00% | 87.39% |
-| INT4 | INT4 | FP8 | 待补充 | 待补充 | 待补充 | 待补充 |
+| 配置 | Prompt strict | Instruction strict | Prompt loose | Instruction loose |
+|---|---:|---:|---:|---:|
+| FP8 + BF16 A + FP8 KV | 80.00% | 80.18% | 87.00% | 87.39% |
+| W4A8 + BF16 KV | 80.00% | 81.98% | 88.00% | 89.19% |
+| W4A4 + BF16 KV | 77.00% | 77.48% | 87.00% | 87.39% |
+| W4A4 + FP8 KV | | | | |
+| W4A4 + MTP2 + FP8 KV + 融合 | 73.00% | 74.80% | 84.00% | 85.60% |
 
 ## 5. 候选取舍
 
-| 配置 | 并发 | 输出 token/s | 双 SLO | IFBench100 Prompt strict |
-|---|---:|---:|:---:|---:|
-| FP8 baseline | 2 | 42.985 | 通过 | 80.00% |
-| W4A16 + BF16 KV | 4 | 138.929 | 通过 | 80.00% |
-| W4A8 + BF16 KV | 10 | 246.820 | 通过 | 80.00% |
-| W4A4 + BF16 KV | 12 | 334.514 | 通过 | 77.00% |
-| W4A4 + FP8 KV | 14 | 371.708 | 通过 | 待补充 |
+| 模型 | 推理框架 | 并发 | 输出 token/s | 双 SLO | IFBench100 Prompt strict |
+|---|---|---:|---:|:---:|---:|
+| FP8 baseline | vLLM (Official) | 2 | 42.985 | 通过 | 80.00% |
+| W4A16 + BF16 KV | HyperQwen（原生） | 4 | 138.929 | 通过 | 80.00% |
+| W4A8 + BF16 KV | HyperQwen（原生） | 10 | 246.820 | 通过 | 80.00% |
+| W4A4 + BF16 KV | HyperQwen（优化版） | 12 | 334.514 | 通过 | 77.00% |
+| W4A4 + FP8 KV + 融合 | HyperQwen（优化版） | 14 | 371.708 | 通过 | 73.00% |
 
-最终量化版本的选择同时考虑吞吐、双 SLO 和精度，FP8 KV 的精度结果待补充。
+速度优先：优化版 HyperQwen，W4A4 + MTP2 + FP8 KV + 融合。
+
+精度优先：原生 HyperQwen，W4A8 + BF16 KV。

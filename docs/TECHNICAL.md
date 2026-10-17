@@ -67,4 +67,4 @@ HyperQwen 的 MTP、Marlin W4A8、FP8 speculative attention，以及 Humming 的
 
 全部优化在单卡内完成，不增加 GPU 数量。W4A4 提高吞吐，但激活量化需要结合 IFBench 判断质量损失；FP8 KV 降低缓存开销，也需要配套验证精度。并发升高后，吞吐增加不一定继续改善 TTFT。
 
-下一步补齐最终 FP8 KV 的 IFBench100，结合吞吐、双 SLO 和准确率确定量化版本，并继续分析长输入排队与输出质量失败样例。
+速度优先采用优化版 HyperQwen 与 W4A4 + MTP2 + FP8 KV + 融合，IFBench100 Prompt strict 为 73.00%；精度优先采用原生 HyperQwen 与 W4A8 + BF16 KV，Prompt strict 为 80.00%。后续继续分析长输入排队与输出质量失败样例。
