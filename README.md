@@ -9,6 +9,7 @@
 - [Benchmark 报告](docs/BENCHMARK.md)
 - [技术与优化说明](docs/TECHNICAL.md)
 - [展示结果与原始记录](evidence/README.md)
+- [并发演示](docs/DEMO.md)
 - [来源与署名](NOTICE.md)
 
 ## 1. 环境与固定版本
@@ -102,8 +103,13 @@ patches/                  复现所需的实现补丁
 scripts/                  安装、模型准备、服务与评测入口
 third_party/official-eval/ 比赛方评测工具
 tests/                    不依赖 GPU 的配置测试
+demo/                     C1–C15 可选的并发演示与自由对话
 ```
 
 本仓库提供展示结果对应的精简记录，不包含完整实验历史、模型权重、缓存或虚拟环境。完整上游源码由安装脚本按固定版本获取；本项目实现修改均在 `patches/` 中。
 
 本地静态检查：`python3 -m unittest discover -s tests -v`。
+
+## 7. 并发演示
+
+页面运行在 controller，连接实验机推理服务，支持 C1–C15、流式任务卡片、请求计时、服务端监控和记录下载。启动方法见[并发演示说明](docs/DEMO.md)。
