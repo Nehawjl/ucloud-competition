@@ -1,0 +1,17 @@
+.runtime/
+outputs/
+models/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.log
+.env
+api_key.txt
+*.safetensors
+*.pt
+*.bin
+HISTORY.md
+HANDOFF.md
+results/
+transfers/

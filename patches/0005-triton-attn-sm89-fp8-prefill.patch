@@ -1,0 +1,20 @@
+--- a/vllm/v1/attention/ops/triton_unified_attention.py
++++ b/vllm/v1/attention/ops/triton_unified_attention.py
+@@ -979,0 +980,8 @@
++    tuned_large_head_sm89_fp8 = (
++        head_size == 256
++        and max_seqlen_q > 1
++        and num_queries_per_kv <= 16
++        and current_platform.is_device_capability_family(89)
++        and kv_quant_mode == KVQuantMode.FP8_PER_TENSOR
++        and q.dtype == current_platform.fp8_dtype()
++    )
+@@ -984,0 +993,5 @@
++    elif tuned_large_head_sm89_fp8:
++        BLOCK_M = 32
++        BLOCK_Q = BLOCK_M // num_queries_per_kv
++        launch_num_warps = 8
++        launch_num_stages = 2
+@@ -1017,0 +1031,2 @@
++    elif tuned_large_head_sm89_fp8:
++        TILE_SIZE_PREFILL = 64

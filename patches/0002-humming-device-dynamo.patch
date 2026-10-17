@@ -1,0 +1,44 @@
+--- a/humming/device.py
++++ b/humming/device.py
+@@ -16,6 +16,10 @@
+     return device.index
+ 
+ 
++
++# Cache instances so torch.compile never traces the native C++ constructor.
++_DEVICE_INFO_CACHE: dict[int, "DeviceInfo"] = {}
++
+ class DeviceInfo:
+     __slots__ = ("_index", "_value")
+ 
+@@ -24,11 +28,19 @@
+             if index.type != "cuda":
+                 raise ValueError(f"expected a CUDA device, got {index}")
+             index = index.index if index.index is not None else torch.cuda.current_device()
++        if index is None:
++            index = torch.cuda.current_device()
++        cached = _DEVICE_INFO_CACHE.get(index)
++        if cached is not None:
++            self._index = cached._index
++            self._value = cached._value
++            return
+         self._index = index
+         self._value = None
+         if index != -1:
+             self._value = _get_device_info_extension()._DeviceInfo(index)
+             self._index = self._value.index
++        _DEVICE_INFO_CACHE[self._index] = self
+ 
+     def _get_value(self) -> Any:
+         if self._value is None:
+@@ -36,6 +48,10 @@
+         return self._value
+ 
+     def __getattr__(self, name: str) -> Any:
++        # torch.compile probes hasattr(obj, "__dict__"); forwarding dunders to the
++        # native device object can recurse under Dynamo tracing.
++        if name.startswith("__"):
++            raise AttributeError(name)
+         return getattr(self._get_value(), name)
+ 
+     def __repr__(self) -> str:

@@ -1,0 +1,11 @@
+vllm==0.31.0
+torch==2.13.0
+triton==3.7.1
+humming-kernels==0.1.16
+compressed-tensors==0.17.0
+transformers==5.17.0
+tokenizers==0.23.3
+huggingface-hub==1.33.0
+ninja==1.13.2
+numpy==2.3.5
+flashinfer-python==0.7.0.post1

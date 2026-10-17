@@ -1,0 +1,35 @@
+--- a/humming/config/config.py
++++ b/humming/config/config.py
+@@ -17,6 +17,23 @@
+     WeightScaleType,
+ )
+ from humming.device import DeviceInfo, current_device
++
++# torch.compile traces this check on every forward; constructing the native
++# DeviceInfo inside the graph makes Dynamo try to trace the C extension ctor.
++# Cache the immutable SM version as a plain int, precomputed at import.
++_ACTUAL_SM_CACHE = {}
++try:
++    _ACTUAL_SM_CACHE[0] = DeviceInfo(0).sm_version
++except Exception:
++    pass
++
++
++def _actual_sm_version(device):
++    from humming.device import get_device_index
++    index = get_device_index(device)
++    if index not in _ACTUAL_SM_CACHE:
++        _ACTUAL_SM_CACHE[index] = DeviceInfo(index).sm_version
++    return _ACTUAL_SM_CACHE[index]
+ from humming.utils.math import round_up
+ 
+ 
+@@ -338,7 +355,7 @@
+         super().__setattr__(name, value)
+ 
+     def check_device(self, device: int | torch.device) -> None:
+-        actual_sm = DeviceInfo(device).sm_version
++        actual_sm = _actual_sm_version(device)
+         if actual_sm != self.sm_version:
+             raise RuntimeError(
+                 f"LayerConfig targets sm{self.sm_version}, but the input is on sm{actual_sm}; "

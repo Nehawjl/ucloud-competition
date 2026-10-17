@@ -1,0 +1,10 @@
+--- a/prepare/fetch_fast_variant.py
++++ b/prepare/fetch_fast_variant.py
+@@ -44,6 +44,7 @@
+     f"no tokenizer.json in {S} — the base model dir is incomplete; re-run the download "
+     f"(README: Setup) before building the fast variant")
+ hub = snapshot_download("syvai/qwen3.8-27b-3090-fast-variant",
++                        revision="124c14e7e8c7d2f5402933b9af368e772a9fcf0c",
+                         allow_patterns=["model-00007-of-00007.safetensors", "model_extra_tensors.safetensors",
+                                         "mtp_draft_vocab_ids.pt", "config.json", "model.safetensors.index.json"])
+ # model.safetensors.index.json stays last in this list: it is the file state() checks.

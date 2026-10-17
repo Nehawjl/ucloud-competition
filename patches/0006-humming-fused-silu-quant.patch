@@ -1,0 +1,97 @@
+--- a/humming/forward.py
++++ b/humming/forward.py
+@@ -161,6 +161,8 @@
+     tuning_config: dict | list | str | None = None,
+     hadamard_block_size: int | None = None,
+     use_pdl: bool | None = None,
++    activation_type: str = "none",
++    activation_impl: str | None = None,
+ ) -> torch.Tensor:
+     compute_config, tuning_config, m_major_scale = _prepare_forward_configs(compute_config, tuning_config)
+ 
+@@ -168,7 +170,10 @@
+     should_quantize = config.input_quant_mode.should_quantize
+     is_quantized_input = inputs.dtype not in unquantized_dtype
+     should_transform = hadamard_block_size is not None and hadamard_block_size > 1
+-    should_process = not is_quantized_input and (should_quantize or should_transform)
++    has_activation = activation_type != "none"
++    should_process = not is_quantized_input and (
++        should_quantize or should_transform or has_activation
++    )
+     if should_process:
+         group_scales = input_scale if config.input_quant_mode.has_group_scale else None
+         token_scales = input_scale_2 if config.input_quant_mode.has_secondary_scale else input_scale
+@@ -177,6 +182,8 @@
+             inputs=inputs,
+             group_scales=group_scales,
+             token_scales=token_scales,
++            activation_type=activation_type,
++            activation_impl=activation_impl,
+             hadamard_block_size=hadamard_block_size,
+             m_major_scale=m_major_scale,
+             use_pdl=use_pdl,
+--- a/vllm/model_executor/layers/quantization/humming.py
++++ b/vllm/model_executor/layers/quantization/humming.py
+@@ -1,5 +1,6 @@
+ # SPDX-License-Identifier: Apache-2.0
+ # SPDX-FileCopyrightText: Copyright contributors to the vLLM project
++import os
+ from collections.abc import Callable
+ from math import gcd
+ from typing import TYPE_CHECKING, Any
+@@ -371,6 +372,8 @@
+ 
+ 
+ class HummingLinearMethod(LinearMethodBase):
++    enable_fused_silu = os.environ.get("VLLM_HUMMING_FUSED_SILU", "0") == "1"
++
+     def __init__(self, quant_config: HummingLayerQuantizationConfig):
+         self.quant_config = quant_config
+         self.weight_schema = quant_config.weight_schema
+@@ -617,6 +620,8 @@
+         layer: torch.nn.Module,
+         x: torch.Tensor,
+         bias: torch.Tensor | None = None,
++        activation_type: str = "none",
++        activation_impl: str | None = None,
+     ) -> torch.Tensor:
+         flatten_inputs = x.reshape(-1, x.size(-1))
+         output = _hm.humming_forward(
+@@ -632,10 +637,20 @@
+             hadamard_block_size=self.weight_schema.hadamard_block_size,
+             locks=self.locks,
+             compute_config=self.compute_config,
++            activation_type=activation_type,
++            activation_impl=activation_impl,
+         )
+         output = output.view(*x.shape[:-1], output.size(-1))
+         return output
+ 
++    def apply_fused_silu_and_mul(self, layer: torch.nn.Module, x: torch.Tensor) -> torch.Tensor:
++        return self.apply(
++            layer,
++            x,
++            activation_type="binary_split",
++            activation_impl="a / (1.0f + __expf(-a)) * b",
++        )
++
+ 
+ class HummingMoEMethod(FusedMoEMethodBase):
+     def __init__(
+--- a/vllm/model_executor/models/qwen2_moe.py
++++ b/vllm/model_executor/models/qwen2_moe.py
+@@ -114,8 +114,12 @@
+ 
+     def forward(self, x):
+         gate_up, _ = self.gate_up_proj(x)
+-        out = self.act_fn(gate_up)
+-        out, _ = self.down_proj(out)
++        quant_method = getattr(self.down_proj, "quant_method", None)
++        if getattr(quant_method, "enable_fused_silu", False):
++            out = quant_method.apply_fused_silu_and_mul(self.down_proj, gate_up)
++        else:
++            out = self.act_fn(gate_up)
++            out, _ = self.down_proj(out)
+ 
+         if self.expert_gate is not None:
+             out = F.sigmoid(self.expert_gate(x)[0]) * out
