@@ -8,6 +8,7 @@
 
 - [Benchmark 报告](docs/BENCHMARK.md)
 - [技术与优化说明](docs/TECHNICAL.md)
+- [展示结果与原始记录](evidence/README.md)
 - [来源与署名](NOTICE.md)
 
 ## 1. 环境与固定版本
@@ -94,6 +95,7 @@ CONCURRENCY=14 bash scripts/run.sh accuracy
 README.md                 复现入口与模型获取方式
 docs/BENCHMARK.md          答辩对应的性能与精度结果
 docs/TECHNICAL.md          选型、优化过程与取舍
+evidence/                 PPT 结果索引、原始明细与测试配置
 config/versions.env        固定源码/模型版本及校验值
 requirements.txt          推理环境核心依赖
 patches/                  复现所需的实现补丁
@@ -102,6 +104,6 @@ third_party/official-eval/ 比赛方评测工具
 tests/                    不依赖 GPU 的配置测试
 ```
 
-本仓库仅提供精简交付内容，不包含原始实验文档、实验数据、模型权重、缓存或虚拟环境。完整上游源码由安装脚本按固定版本获取；本项目实现修改均在 `patches/` 中。
+本仓库提供展示结果对应的精简记录，不包含完整实验历史、模型权重、缓存或虚拟环境。完整上游源码由安装脚本按固定版本获取；本项目实现修改均在 `patches/` 中。
 
 本地静态检查：`python3 -m unittest discover -s tests -v`。

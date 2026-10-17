@@ -1,6 +1,7 @@
 .runtime/
 outputs/
 models/
+!evidence/performance/models/
 venv/
 .venv/
 __pycache__/

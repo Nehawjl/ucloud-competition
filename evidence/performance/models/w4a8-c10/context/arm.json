@@ -1,0 +1,11 @@
+{
+  "run_id": "20261017T130119Z-hyperqwen-perc-scan",
+  "concurrency": 10,
+  "variant": "tuned",
+  "max_num_seqs": 10,
+  "max_cudagraph_capture_size": 40,
+  "max_num_batched_tokens": 1024,
+  "vllm_marlin_tune": 1,
+  "started_at_utc": "2026-10-17T13:02:11Z",
+  "ended_at_utc": "2026-10-17T13:07:06Z"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "完整",
+  "issues": [],
+  "concurrency": 10,
+  "expected_requests": 100,
+  "records": 100,
+  "valid_records": 100,
+  "successful_requests": 100.0,
+  "error_requests": 0,
+  "lengths_verified": true,
+  "osl_verified": true,
+  "input_length_basis": "tiktoken/o200k_base",
+  "actual_input_tokens": {
+    "min": 8192,
+    "max": 8192,
+    "mean": 8192.0
+  },
+  "metrics": {
+    "time_to_first_token": {
+      "mean": 3459.5321516799995,
+      "p50": 2698.9070665,
+      "p95": 8684.565162299994,
+      "p99": 15760.990822100008
+    },
+    "inter_token_latency": {
+      "mean": 33.589593476125245,
+      "p50": 34.60571486203523,
+      "p95": 37.35563858444227,
+      "p99": 45.299328803150686
+    },
+    "request_latency": {
+      "mean": 20623.81441798,
+      "p50": 20601.716911,
+      "p95": 25452.911752099993,
+      "p99": 31214.12303206001
+    }
+  },
+  "benchmark_duration": 207.43480883200002,
+  "request_throughput": 0.48206942250545287,
+  "output_token_throughput": 246.81954432279187,
+  "artifacts": "/root/ucloud-com-runs/20261017T130119Z-hyperqwen-perc-scan/arms/c10-tuned/eval/cells/c10/performance/c10"
+}
