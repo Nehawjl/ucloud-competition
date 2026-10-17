@@ -1,6 +1,6 @@
 # 来源与署名
 
-项目作者：wangjl（GitHub：Nehawjl，645765686@qq.com）。
+项目作者：王嘉乐、毛俊琪、吴松灿。
 
 - 推理基础：[HyperQwen](https://github.com/syv-ai/HyperQwen)，固定版本见 `config/versions.env`。安装脚本下载完整上游源码并保留其 LICENSE。
 - 推理运行时：[vLLM](https://github.com/vllm-project/vllm)，0.31.0，Apache-2.0。

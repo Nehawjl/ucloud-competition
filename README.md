@@ -1,6 +1,6 @@
 # Qwen3.8-27B 单卡推理优化
 
-赛道 A：AI Infra。作者：**wangjl**（GitHub：[Nehawjl](https://github.com/Nehawjl)，645765686@qq.com）。
+赛道 A：AI Infra。作者：**王嘉乐、毛俊琪、吴松灿**。
 
 在单张 RTX 4090（49140 MiB）上，针对 8192-token 输入、512-token 输出的并发推理，组合 W4A4、MTP2、FP8 KV、CUDA Graph 与 Prefill 参数优化，并接入 SM89 attention 调优和 SiLU/INT4 量化融合。
 
