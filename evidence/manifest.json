@@ -532,6 +532,11 @@
       "sha256": "28be6b0fcb2df35b03f51ae104a9bce9b9bba39be0104399b615bd5c0919d233",
       "bytes": 64825
     },
+    "performance/final/c1/server_metrics_export.json": {
+      "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c1/eval/cells/c1/performance/c1/server_metrics_export.json",
+      "sha256": "5dd8739782c3e76138d121b965f18ebf939dbcb35aed7632191cfe9da69a86d0",
+      "bytes": 117927
+    },
     "performance/final/c1/summary.json": {
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c1/eval/cells/c1/performance/c1/summary.json",
       "sha256": "afe538020592db4d420665cfa76f869443522ff11f7b6b60e5dc7a9b32081f31",
@@ -621,6 +626,11 @@
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c10/eval/cells/c10/performance/c10/phases/profiling/server_metrics.json",
       "sha256": "9965d1d555d9a952964ea86e34191b443339dca8a9f3e12ada5b209bf5232e6f",
       "bytes": 64852
+    },
+    "performance/final/c10/server_metrics_export.json": {
+      "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c10/eval/cells/c10/performance/c10/server_metrics_export.json",
+      "sha256": "5af1ba04975a6ba4123ed715e8b7d3ab271c3d4ad19fd6889116513f1da373eb",
+      "bytes": 118018
     },
     "performance/final/c10/summary.json": {
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c10/eval/cells/c10/performance/c10/summary.json",
@@ -712,6 +722,11 @@
       "sha256": "e3c3460f72fa33234b974a6ffa08df3f41b96438517a52faa2cd74d3080ac5ab",
       "bytes": 64911
     },
+    "performance/final/c11/server_metrics_export.json": {
+      "source": "results/20261017T212632Z-hyperqwen-w4a4-mtp2-fp8-odd-concurrency-sweep/arms/c11/eval/cells/c11/performance/c11/server_metrics_export.json",
+      "sha256": "ea6fd6f9ff7d2eeefcf8cbb649926df91b890ec9eeb8a0b708e4a6df2795dbdf",
+      "bytes": 118049
+    },
     "performance/final/c11/summary.json": {
       "source": "results/20261017T212632Z-hyperqwen-w4a4-mtp2-fp8-odd-concurrency-sweep/arms/c11/eval/cells/c11/performance/c11/summary.json",
       "sha256": "e853b972f89f8aa498796eea49256957a1055da82740d32c82143d3ce03b4663",
@@ -801,6 +816,11 @@
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c12/eval/cells/c12/performance/c12/phases/profiling/server_metrics.json",
       "sha256": "0078257e3e8b5c4aa20f20f9463c415fa8071d7047acabc70eb4f829ec39b058",
       "bytes": 64814
+    },
+    "performance/final/c12/server_metrics_export.json": {
+      "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c12/eval/cells/c12/performance/c12/server_metrics_export.json",
+      "sha256": "7e559bc24cc6425d125cc04fb332b8a21b3f81be4ba0c5c3d74fa74561df9666",
+      "bytes": 118060
     },
     "performance/final/c12/summary.json": {
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c12/eval/cells/c12/performance/c12/summary.json",
@@ -892,6 +912,11 @@
       "sha256": "2d22ea17d925e82240d0c550f15cd365d98c2f46dac79f43937c8a850bfc3297",
       "bytes": 64869
     },
+    "performance/final/c13/server_metrics_export.json": {
+      "source": "results/20261017T212632Z-hyperqwen-w4a4-mtp2-fp8-odd-concurrency-sweep/arms/c13/eval/cells/c13/performance/c13/server_metrics_export.json",
+      "sha256": "37669290511da9d1ae4f4af89d41a527d6aff77039bfdce11ea85f6db558e544",
+      "bytes": 118050
+    },
     "performance/final/c13/summary.json": {
       "source": "results/20261017T212632Z-hyperqwen-w4a4-mtp2-fp8-odd-concurrency-sweep/arms/c13/eval/cells/c13/performance/c13/summary.json",
       "sha256": "87f0277046995cd54202a0e995d783ff2d7586554489f3126e5faf74d1dfcf50",
@@ -981,6 +1006,11 @@
       "source": "results/20261017T210555Z-hyperqwen-w4a4-mtp2-fp8-c14-repeat/arms/r2/eval/cells/c14/performance/c14/phases/profiling/server_metrics.json",
       "sha256": "3bc365401325ae6b95f596a6b3c4b65ffefc757dfa5246156f67373eec15246a",
       "bytes": 64880
+    },
+    "performance/final/c14/server_metrics_export.json": {
+      "source": "results/20261017T210555Z-hyperqwen-w4a4-mtp2-fp8-c14-repeat/arms/r2/eval/cells/c14/performance/c14/server_metrics_export.json",
+      "sha256": "a26ac92f6927e0545ef8b90dc75afa9ca314da4f4a8488963d699240990e9a72",
+      "bytes": 117994
     },
     "performance/final/c14/summary.json": {
       "source": "results/20261017T210555Z-hyperqwen-w4a4-mtp2-fp8-c14-repeat/arms/r2/eval/cells/c14/performance/c14/summary.json",
@@ -1072,6 +1102,11 @@
       "sha256": "5d8292bd2c18ec8cc8c1d0c68d63a1b31edbdaca0aff8e95b618c853c05e7ccc",
       "bytes": 64896
     },
+    "performance/final/c15/server_metrics_export.json": {
+      "source": "results/20261017T200115Z-hyperqwen-w4a4-mtp2-fp8-c15-fusedsilu/arms/triton/eval/cells/c15/performance/c15/server_metrics_export.json",
+      "sha256": "57dd43a41e47517ba46f6e7b87cea1e2397d76216dd0c65e797daa4ccc5dfe2c",
+      "bytes": 118082
+    },
     "performance/final/c15/summary.json": {
       "source": "results/20261017T200115Z-hyperqwen-w4a4-mtp2-fp8-c15-fusedsilu/arms/triton/eval/cells/c15/performance/c15/summary.json",
       "sha256": "c73cceeec23aa339f5e3f1e2678a697627bdc91952671fa27e025e3266f74fe4",
@@ -1161,6 +1196,11 @@
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c2/eval/cells/c2/performance/c2/phases/profiling/server_metrics.json",
       "sha256": "484af11645b1a6fa0c78fbcbf9f2140af211fc61727d55b444ff18711adfba6e",
       "bytes": 64789
+    },
+    "performance/final/c2/server_metrics_export.json": {
+      "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c2/eval/cells/c2/performance/c2/server_metrics_export.json",
+      "sha256": "64ce2d0d5ec134c1246fa897142e70c0255eb74b1615e13d8e738d7b3ca36b9f",
+      "bytes": 117983
     },
     "performance/final/c2/summary.json": {
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c2/eval/cells/c2/performance/c2/summary.json",
@@ -1252,6 +1292,11 @@
       "sha256": "ed57150d268231288810d6ebedb7ed07463df905d35bffc363a3b9236580a14e",
       "bytes": 64666
     },
+    "performance/final/c4/server_metrics_export.json": {
+      "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c4/eval/cells/c4/performance/c4/server_metrics_export.json",
+      "sha256": "0d5d9fcfd1b69d62239622316d3f6869b8f4c075460deb3909eca2d7f7304bc5",
+      "bytes": 117882
+    },
     "performance/final/c4/summary.json": {
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c4/eval/cells/c4/performance/c4/summary.json",
       "sha256": "ed090c5232bad289968a634b76db30d67070ed2ab7b31370ffe88374b3746fd1",
@@ -1341,6 +1386,11 @@
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c8/eval/cells/c8/performance/c8/phases/profiling/server_metrics.json",
       "sha256": "621ef7a4764e9548c066e5ff7f8e840864395998b611b6cf66e526f0d51f49a7",
       "bytes": 64844
+    },
+    "performance/final/c8/server_metrics_export.json": {
+      "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c8/eval/cells/c8/performance/c8/server_metrics_export.json",
+      "sha256": "3ea3133d1daa5ecc38fbdc8a83af0a9cc17e282d332fabb718d42da5f780a2dd",
+      "bytes": 118020
     },
     "performance/final/c8/summary.json": {
       "source": "results/20261017T201127Z-hyperqwen-w4a4-mtp2-fp8-final-sweep/arms/c8/eval/cells/c8/performance/c8/summary.json",
@@ -1432,6 +1482,11 @@
       "sha256": "948ebee56f32b9087037846b2fce88c77202afb3993e344143f1b151af17dc68",
       "bytes": 64851
     },
+    "performance/final/c9/server_metrics_export.json": {
+      "source": "results/20261017T212632Z-hyperqwen-w4a4-mtp2-fp8-odd-concurrency-sweep/arms/c9/eval/cells/c9/performance/c9/server_metrics_export.json",
+      "sha256": "82d2ceb19834602a442f6ad4cf4134fc69b137bd3018657c1f53276fe595eb92",
+      "bytes": 118056
+    },
     "performance/final/c9/summary.json": {
       "source": "results/20261017T212632Z-hyperqwen-w4a4-mtp2-fp8-odd-concurrency-sweep/arms/c9/eval/cells/c9/performance/c9/summary.json",
       "sha256": "1f5016353ebb40e6bf4c210404397ac4720f2ef0a9aca393795cfa85841dff52",
@@ -1522,6 +1577,11 @@
       "sha256": "8768802b9c7b35e9eeab00a1dd4cf2004569d7dcf2ec0a5ebd73e38a79b03965",
       "bytes": 64951
     },
+    "performance/models/w4a4-bf16kv-c12/server_metrics_export.json": {
+      "source": "results/20261017T163141Z-hyperqwen-w4a4-mtp2-1536-tpot-scan/arms/c12-scheduled1408/eval/cells/c12/performance/c12/server_metrics_export.json",
+      "sha256": "d431ff916d7bb6cac626154175a35253b4c475bf18db481c1b7e35c4aff457e3",
+      "bytes": 118231
+    },
     "performance/models/w4a4-bf16kv-c12/summary.json": {
       "source": "results/20261017T163141Z-hyperqwen-w4a4-mtp2-1536-tpot-scan/arms/c12-scheduled1408/eval/cells/c12/performance/c12/summary.json",
       "sha256": "0f1367ba80d18d79ed10df947f2e6047e969b87cc6db9468886d77134fe2709d",
@@ -1606,6 +1666,11 @@
       "source": "results/20261017T130119Z-hyperqwen-perc-scan/arms/c10-tuned/eval/cells/c10/performance/c10/phases/profiling/server_metrics.json",
       "sha256": "7ed93478cdfc3c1a96f4d8ea3305bf7ec51a56b6d354c6587f9d0593e34b3b62",
       "bytes": 65136
+    },
+    "performance/models/w4a8-c10/server_metrics_export.json": {
+      "source": "results/20261017T130119Z-hyperqwen-perc-scan/arms/c10-tuned/eval/cells/c10/performance/c10/server_metrics_export.json",
+      "sha256": "caaf243cce19954be1103af41a123e44da109ac2779aac877f9fbf386c417b7a",
+      "bytes": 118408
     },
     "performance/models/w4a8-c10/summary.json": {
       "source": "results/20261017T130119Z-hyperqwen-perc-scan/arms/c10-tuned/eval/cells/c10/performance/c10/summary.json",
@@ -1692,6 +1757,11 @@
       "sha256": "6f3bd1d6a66462076322ef33dc2bcec7c4c9fdce9d96ad7815cadcf049aa58b7",
       "bytes": 65446
     },
+    "performance/screening/hyperqwen-native/c1/server_metrics_export.json": {
+      "source": "results/20261016T204716Z-hyperqwen-perf/eval/performance/c1/server_metrics_export.json",
+      "sha256": "0dff9667d2ff77cfd339d5324b5bbba426f06ce587fe95aea87917d6abf6af5b",
+      "bytes": 118938
+    },
     "performance/screening/hyperqwen-native/c1/summary.json": {
       "source": "results/20261016T204716Z-hyperqwen-perf/eval/performance/c1/summary.json",
       "sha256": "7d05dc28783ee07dfb46d51ab301944b11d8a9df461781330a09a3446a208ec8",
@@ -1776,6 +1846,11 @@
       "source": "results/20261016T204716Z-hyperqwen-perf/eval/performance/c2/phases/profiling/server_metrics.json",
       "sha256": "082d9131dc4d06fe2124ea9b9b2961b8d76a69fdba4fb2d6798bbab9ddb32409",
       "bytes": 65473
+    },
+    "performance/screening/hyperqwen-native/c2/server_metrics_export.json": {
+      "source": "results/20261016T204716Z-hyperqwen-perf/eval/performance/c2/server_metrics_export.json",
+      "sha256": "3538ec3725378f4cacb3b5ad7dacd9796ad44299a0d5dcb55dee75026184ce99",
+      "bytes": 118988
     },
     "performance/screening/hyperqwen-native/c2/summary.json": {
       "source": "results/20261016T204716Z-hyperqwen-perf/eval/performance/c2/summary.json",
@@ -1862,6 +1937,11 @@
       "sha256": "9d57b1d347f1cbd2d1d249034caa911790ab9f6de463e0e98202048f7566e0dd",
       "bytes": 65513
     },
+    "performance/screening/hyperqwen-native/c4/server_metrics_export.json": {
+      "source": "results/20261016T204716Z-hyperqwen-perf/eval/performance/c4/server_metrics_export.json",
+      "sha256": "d9de5361dc21a80d1377c11d2b01f5063fccb5366104b38580000325d6a49e32",
+      "bytes": 119050
+    },
     "performance/screening/hyperqwen-native/c4/summary.json": {
       "source": "results/20261016T204716Z-hyperqwen-perf/eval/performance/c4/summary.json",
       "sha256": "ead275ad25d5b4ecdede58b373c47daef1d80a38babf87944f62241f7308aa79",
@@ -1947,6 +2027,11 @@
       "sha256": "b4601229daa67b9317a53a475dc0b9e672a9c0fbb3bf2999d29d6c50b06930a0",
       "bytes": 65408
     },
+    "performance/screening/hyperqwen-native/c8/server_metrics_export.json": {
+      "source": "results/20261016T204716Z-hyperqwen-perf/eval/performance/c8/server_metrics_export.json",
+      "sha256": "35dd91609d31efc3ab7d80fc1b0a7024a62cf24a81387b19e3911a88a7ffd5ef",
+      "bytes": 118888
+    },
     "performance/screening/hyperqwen-native/c8/summary.json": {
       "source": "results/20261016T204716Z-hyperqwen-perf/eval/performance/c8/summary.json",
       "sha256": "54f17d41387b15b6f4f762c0cea69a926ab411790a98fec42eb45208a8246063",
@@ -2026,6 +2111,11 @@
       "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c1/phases/profiling/server_metrics.json",
       "sha256": "5fd588ee6d7f5f4007021a25895d960b5960f452067ba51824ffc4c64f7b0214",
       "bytes": 8234
+    },
+    "performance/screening/ninfer/c1/server_metrics_export.json": {
+      "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c1/server_metrics_export.json",
+      "sha256": "80bea8e35943b52170692cfd85dd6550aa1423c46d0036aec69afe94ea03684a",
+      "bytes": 15538
     },
     "performance/screening/ninfer/c1/summary.json": {
       "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c1/summary.json",
@@ -2107,6 +2197,11 @@
       "sha256": "8a1120ca0ddecad7d63ad1d220e37ea4848b5cf8161385cb4d7a866503094348",
       "bytes": 8240
     },
+    "performance/screening/ninfer/c2/server_metrics_export.json": {
+      "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c2/server_metrics_export.json",
+      "sha256": "fd3264d3d2c5ce1251a883e09058f3ab80d86083cde56b0b9bd156845a66dc48",
+      "bytes": 15626
+    },
     "performance/screening/ninfer/c2/summary.json": {
       "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c2/summary.json",
       "sha256": "f9162bfb9ea92f5edc8e238e2f3d7cdf707b746e45cd0d1e0d0d3c89c91fe3ca",
@@ -2186,6 +2281,11 @@
       "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c4/phases/profiling/server_metrics.json",
       "sha256": "7855b3a9805f6df6fd3f510c627e8f4a6ce088720e89e964deba02ba47395cb6",
       "bytes": 8279
+    },
+    "performance/screening/ninfer/c4/server_metrics_export.json": {
+      "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c4/server_metrics_export.json",
+      "sha256": "fd78a2a1b86c3dedc6bb0ba42593568c1c5f0d8e19866825bbd71fb9fd707db0",
+      "bytes": 15655
     },
     "performance/screening/ninfer/c4/summary.json": {
       "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c4/summary.json",
@@ -2267,6 +2367,11 @@
       "sha256": "9994791798b006769f9b2fe86b05185bd1b1d96bea9b5a9e421d86f319e588fb",
       "bytes": 8305
     },
+    "performance/screening/ninfer/c8/server_metrics_export.json": {
+      "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c8/server_metrics_export.json",
+      "sha256": "f092ab5686dc0e460faacff711ecc1257bffed29854bf97153e9fdca68c023e7",
+      "bytes": 15709
+    },
     "performance/screening/ninfer/c8/summary.json": {
       "source": "results/20261016T191937Z-ninfer-perf/eval/performance/c8/summary.json",
       "sha256": "c3028b2f0b8cf0dff4aa5b901e05f8a3c0c5be32c828001c73e4563c03162574",
@@ -2321,6 +2426,11 @@
       "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c1/phases/profiling/server_metrics.json",
       "sha256": "dcf952f1f8b39197c20adc4028daa2fa38897664620e852e7a75d3d2ae080f53",
       "bytes": 58130
+    },
+    "performance/screening/official/c1/server_metrics_export.json": {
+      "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c1/server_metrics_export.json",
+      "sha256": "064754647fcee8be2af23eca92131ecbf93c6b2b5843c81b362184a797fc164f",
+      "bytes": 104951
     },
     "performance/screening/official/c1/summary.json": {
       "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c1/summary.json",
@@ -2377,6 +2487,11 @@
       "sha256": "b9c3cda991d1891861af4efbe02746baeb374fb3829a1ca0c09a3e7d7b469ad5",
       "bytes": 58112
     },
+    "performance/screening/official/c2/server_metrics_export.json": {
+      "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c2/server_metrics_export.json",
+      "sha256": "68f49f3ba977ecc04398ce3f5341d35aaaa12f224d7e425b414ad87ced3ba5f9",
+      "bytes": 104908
+    },
     "performance/screening/official/c2/summary.json": {
       "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c2/summary.json",
       "sha256": "e6d0195bc1300a1de6b17468d28db84de8053050194b74171a35b9180b8340c9",
@@ -2432,6 +2547,11 @@
       "sha256": "bb3cffdaa3820d6981435546e621462bd6021bdff4db1fb3555c917ede1ab11e",
       "bytes": 58040
     },
+    "performance/screening/official/c4/server_metrics_export.json": {
+      "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c4/server_metrics_export.json",
+      "sha256": "755c4ea193e8f8232dd12d4a162e43c98d6c71ce6c806f75fc857492dbffd65f",
+      "bytes": 104799
+    },
     "performance/screening/official/c4/summary.json": {
       "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c4/summary.json",
       "sha256": "6fd27247c1b7239ca70e0b8722e56033007ebe1684a5aaf630d67aecb6e9b034",
@@ -2486,6 +2606,11 @@
       "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c8/phases/profiling/server_metrics.json",
       "sha256": "40b505628d8efa0dc93ca9a01d420a696330f82ea10d61cc3080466b11bcf5d0",
       "bytes": 58009
+    },
+    "performance/screening/official/c8/server_metrics_export.json": {
+      "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c8/server_metrics_export.json",
+      "sha256": "763d7b9f8b8a5afb74f311b32bf4b20b8ed0fdbe9caea4740e070c6b667bc7bf",
+      "bytes": 104767
     },
     "performance/screening/official/c8/summary.json": {
       "source": "results/20261016T101224Z-baseline-vllm-fp8/eval/performance/c8/summary.json",
@@ -2567,6 +2692,11 @@
       "sha256": "1a40165cac6006cdf12f963d4389ab3f99459cefbb457903291e046fd0408b28",
       "bytes": 23725
     },
+    "performance/screening/q27/c1/server_metrics_export.json": {
+      "source": "results/20261016T172526Z-q27-perf/eval/performance/c1/server_metrics_export.json",
+      "sha256": "6c22ae36ebb0ddc46308d8de94c9525d30825aecdd1409d7f1ffa183ad7b6a18",
+      "bytes": 45064
+    },
     "performance/screening/q27/c1/summary.json": {
       "source": "results/20261016T172526Z-q27-perf/eval/performance/c1/summary.json",
       "sha256": "e67390f7c8fd2ee246ad8204363247a0009cfd9e4f1657512f79be85da6fb4db",
@@ -2646,6 +2776,11 @@
       "source": "results/20261016T172526Z-q27-perf/eval/performance/c2/phases/profiling/server_metrics.json",
       "sha256": "fb1c7bffa00a4c29a16f213d1e449bf4c2b43f672c56a59f90259974da382819",
       "bytes": 23670
+    },
+    "performance/screening/q27/c2/server_metrics_export.json": {
+      "source": "results/20261016T172526Z-q27-perf/eval/performance/c2/server_metrics_export.json",
+      "sha256": "6a5705c9587c8edb9524ebd6d09f694cdb9dde24860503d38185e730242725be",
+      "bytes": 44997
     },
     "performance/screening/q27/c2/summary.json": {
       "source": "results/20261016T172526Z-q27-perf/eval/performance/c2/summary.json",
@@ -2727,6 +2862,11 @@
       "sha256": "d5471935e4ba5084b243e49169903fe37264c62742d50c727faa4515299e99d7",
       "bytes": 23666
     },
+    "performance/screening/q27/c4/server_metrics_export.json": {
+      "source": "results/20261016T172526Z-q27-perf/eval/performance/c4/server_metrics_export.json",
+      "sha256": "2e020d6cbc1dd6d8f84ec3320c8e58116cd6de615249b9b8bdf9c51e65aaa8ad",
+      "bytes": 45007
+    },
     "performance/screening/q27/c4/summary.json": {
       "source": "results/20261016T172526Z-q27-perf/eval/performance/c4/summary.json",
       "sha256": "b057009252771259a3943cd4a723c145ed43d83f6fe302c0210013a1240fd215",
@@ -2806,6 +2946,11 @@
       "source": "results/20261016T172526Z-q27-perf/eval/performance/c8/phases/profiling/server_metrics.json",
       "sha256": "3e73fe746674a70d4a6a25125afa7cb87ed70014b47cf7abb1d74d23d50ad1af",
       "bytes": 23681
+    },
+    "performance/screening/q27/c8/server_metrics_export.json": {
+      "source": "results/20261016T172526Z-q27-perf/eval/performance/c8/server_metrics_export.json",
+      "sha256": "108645e9e5efe29f55864afe97398a41bfbf978c31e1798eebaef351f7fee794",
+      "bytes": 44955
     },
     "performance/screening/q27/c8/summary.json": {
       "source": "results/20261016T172526Z-q27-perf/eval/performance/c8/summary.json",
@@ -2897,6 +3042,11 @@
       "sha256": "1af29683d9e4b151ef323bfe90a47bb41a4c21ebdb7d387a559850adc3ea3444",
       "bytes": 65173
     },
+    "performance/timeline/c10-after/server_metrics_export.json": {
+      "source": "results/20261017T114432Z-hyperqwen-cscan/eval/cells/c10/performance/c10/server_metrics_export.json",
+      "sha256": "61ffc1d7897e404748ee2208c590f116291a21aef63124bd53959f00769b660a",
+      "bytes": 118343
+    },
     "performance/timeline/c10-after/summary.json": {
       "source": "results/20261017T114432Z-hyperqwen-cscan/eval/cells/c10/performance/c10/summary.json",
       "sha256": "b28a031c0e1ccc1f357798dda2646a2600197204ef3b8cf0804452a45abae08b",
@@ -2986,6 +3136,11 @@
       "source": "results/20261017T054427Z-hyperqwen-cscan/eval/cells/c10/performance/c10/phases/profiling/server_metrics.json",
       "sha256": "01e952a21baa9b57a8b62669bd0d52fa713ab14d66c82ef2c6bf1324e03ace20",
       "bytes": 65225
+    },
+    "performance/timeline/c10-before/server_metrics_export.json": {
+      "source": "results/20261017T054427Z-hyperqwen-cscan/eval/cells/c10/performance/c10/server_metrics_export.json",
+      "sha256": "eeec761f973b3a7ebc4bcc18f6d20e6ad0c6e2a920fd307095061043cba4c5ea",
+      "bytes": 118419
     },
     "performance/timeline/c10-before/summary.json": {
       "source": "results/20261017T054427Z-hyperqwen-cscan/eval/cells/c10/performance/c10/summary.json",
@@ -3077,6 +3232,11 @@
       "sha256": "a2c0dd3a625b719747ac2abd696457f84abdd0fcda39bba2794bbaf6ceed72b8",
       "bytes": 64836
     },
+    "performance/timeline/c12-after/server_metrics_export.json": {
+      "source": "results/20261017T160029Z-hyperqwen-w4a4-mtp2-prefill-scan/arms/c12-bt1280/eval/cells/c12/performance/c12/server_metrics_export.json",
+      "sha256": "6bd8474a03c77b375d962e65bb0b35c1c268594e4edd31666ed85a6bba409280",
+      "bytes": 117912
+    },
     "performance/timeline/c12-after/summary.json": {
       "source": "results/20261017T160029Z-hyperqwen-w4a4-mtp2-prefill-scan/arms/c12-bt1280/eval/cells/c12/performance/c12/summary.json",
       "sha256": "e01472a395d1bec3f2e1ee42120111baea454c1f168a778dff5a74e2ed03a15b",
@@ -3161,6 +3321,11 @@
       "source": "results/20261017T131511Z-hyperqwen-perc-scan/arms/c12-tuned/eval/cells/c12/performance/c12/phases/profiling/server_metrics.json",
       "sha256": "eeb8ae2ae5cedaee3a53f4658ecece5ae22e6ac58ff088cf1b777653eac4d383",
       "bytes": 65197
+    },
+    "performance/timeline/c12-before/server_metrics_export.json": {
+      "source": "results/20261017T131511Z-hyperqwen-perc-scan/arms/c12-tuned/eval/cells/c12/performance/c12/server_metrics_export.json",
+      "sha256": "76448723a3b6aa35d8ef810e71232bea76227d27d3e4cf101522667e6d349227",
+      "bytes": 118482
     },
     "performance/timeline/c12-before/summary.json": {
       "source": "results/20261017T131511Z-hyperqwen-perc-scan/arms/c12-tuned/eval/cells/c12/performance/c12/summary.json",
@@ -3252,6 +3417,11 @@
       "sha256": "0286dcb1fa8d5c1bd4d21072627b717b31a98b24c0c343d4164ce5eaa68841b4",
       "bytes": 64860
     },
+    "performance/timeline/c14-before/server_metrics_export.json": {
+      "source": "results/20261017T165130Z-hyperqwen-w4a4-mtp2-1536-s1408-c14-c16/arms/c14/eval/cells/c14/performance/c14/server_metrics_export.json",
+      "sha256": "3e9adb175ac56736c912ded44b12bde1ed0e4ceecdde8346d1d21c010117bbb2",
+      "bytes": 118034
+    },
     "performance/timeline/c14-before/summary.json": {
       "source": "results/20261017T165130Z-hyperqwen-w4a4-mtp2-1536-s1408-c14-c16/arms/c14/eval/cells/c14/performance/c14/summary.json",
       "sha256": "72188473503159a24a3fa5f29fe5ec37327f7609b9ef47c64ef5a2ed6d3b1d78",
@@ -3341,6 +3511,11 @@
       "source": "results/20261017T010450Z-hyperqwen-w4a8-mtp3-c8/eval/performance/c8/phases/profiling/server_metrics.json",
       "sha256": "b4d723d7a94c8e50d917a3280b087ba74c38e8cc4e0ab359b1e5d51dfe0feb98",
       "bytes": 65237
+    },
+    "performance/timeline/c8-after/server_metrics_export.json": {
+      "source": "results/20261017T010450Z-hyperqwen-w4a8-mtp3-c8/eval/performance/c8/server_metrics_export.json",
+      "sha256": "c8df3b20936867d934bf7bd89aa82b6380e64d5bc8b48c1853604d4c6c4cd010",
+      "bytes": 118445
     },
     "performance/timeline/c8-after/summary.json": {
       "source": "results/20261017T010450Z-hyperqwen-w4a8-mtp3-c8/eval/performance/c8/summary.json",

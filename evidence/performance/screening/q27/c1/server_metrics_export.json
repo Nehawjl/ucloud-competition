@@ -1,0 +1,1811 @@
+{
+  "schema_version": "1.1",
+  "aiperf_version": "0.13.0",
+  "benchmark_id": "b7aea899ece9",
+  "summary": {
+    "endpoints_configured": [
+      "http://127.0.0.1:8088/metrics"
+    ],
+    "endpoints_successful": [
+      "http://127.0.0.1:8088/metrics"
+    ],
+    "start_time": "2026-10-16T17:27:05.195994",
+    "end_time": "2026-10-16T17:34:26.293908",
+    "endpoint_info": {
+      "http://127.0.0.1:8088/metrics": {
+        "total_fetches": 1441,
+        "first_fetch_ns": 1792171589722420077,
+        "last_fetch_ns": 1792172068296217307,
+        "avg_fetch_latency_ms": 0.6318997189451769,
+        "unique_updates": 1441,
+        "first_update_ns": 1792171589722420077,
+        "last_update_ns": 1792172068296217307,
+        "duration_seconds": 478.57379723,
+        "avg_update_interval_ms": 332.3429147430556,
+        "median_update_interval_ms": 333.5263805
+      }
+    },
+    "phase_time_ranges": {
+      "profiling": {
+        "start_ns": 1792171625195994007,
+        "end_ns": 1792172066293908280
+      },
+      "warmup": {
+        "start_ns": 1792171590272516744,
+        "end_ns": 1792171625213110581
+      }
+    }
+  },
+  "metrics_phase": "profiling",
+  "metrics": {
+    "q27_decode_tokens": {
+      "type": "counter",
+      "description": "Generated tokens delivered.",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 51200.0,
+            "rate": 115.54937567106586
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_decode_tokens_processed": {
+      "type": "counter",
+      "description": "Tokens delivered during decode (live, cumulative).",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 51200.0,
+            "rate": 115.54937567106586
+          }
+        }
+      ]
+    },
+    "q27_e2e_seconds": {
+      "type": "histogram",
+      "description": "Wall from request arrival to generation complete.",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "300.000": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "count": 100,
+            "sum": 440.62760099999997,
+            "avg": 4.40627601,
+            "count_rate": 0.2256823743575505,
+            "sum_rate": 0.9944188320115139,
+            "p1_estimate": 3.72440684549075,
+            "p5_estimate": 3.780950845446215,
+            "p10_estimate": 3.8516308453905457,
+            "p25_estimate": 4.063670845223539,
+            "p50_estimate": 4.4170708449451945,
+            "p75_estimate": 4.7656831375961435,
+            "p90_estimate": 4.790223137429137,
+            "p95_estimate": 4.798403137373468,
+            "p99_estimate": 4.835611752686783
+          },
+          "buckets": {
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 99,
+            "10.000": 100,
+            "30.000": 100,
+            "60.000": 100,
+            "300.000": 100,
+            "+Inf": 100
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "300.000": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "300.000": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "q27_itl_seconds": {
+      "type": "histogram",
+      "description": "Per-request mean inter-token latency (dec_ms / dec).",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.003": 0,
+            "0.004": 0,
+            "0.005": 0,
+            "0.008": 0,
+            "0.010": 0,
+            "0.015": 0,
+            "0.020": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "count": 100,
+            "sum": 0.258416,
+            "avg": 0.00258416,
+            "count_rate": 0.2256823743575505,
+            "sum_rate": 0.0005831993645198077,
+            "p1_estimate": 0.002208491443396829,
+            "p5_estimate": 0.0022339447632082968,
+            "p10_estimate": 0.0022657614129726307,
+            "p25_estimate": 0.0023612113622656344,
+            "p50_estimate": 0.002520294611087306,
+            "p75_estimate": 0.002679377859908978,
+            "p90_estimate": 0.002774827809201981,
+            "p95_estimate": 0.0028066444589663155,
+            "p99_estimate": 0.002895963167690509
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.003": 99,
+            "0.004": 99,
+            "0.005": 99,
+            "0.008": 99,
+            "0.010": 100,
+            "0.015": 100,
+            "0.020": 100,
+            "0.050": 100,
+            "0.100": 100,
+            "+Inf": 100
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.003": 0,
+            "0.004": 0,
+            "0.005": 0,
+            "0.008": 0,
+            "0.010": 0,
+            "0.015": 0,
+            "0.020": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.003": 0,
+            "0.004": 0,
+            "0.005": 0,
+            "0.008": 0,
+            "0.010": 0,
+            "0.015": 0,
+            "0.020": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "q27_kv_usage_perc": {
+      "type": "gauge",
+      "description": "Paged KV pool occupancy (0-1).",
+      "unit": "ratio",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "avg": 0.11768199999999997,
+            "min": 0.117682,
+            "max": 0.117682,
+            "std": 2.7766000245335685e-17,
+            "p1": 0.117682,
+            "p5": 0.117682,
+            "p10": 0.117682,
+            "p25": 0.117682,
+            "p50": 0.117682,
+            "p75": 0.117682,
+            "p90": 0.117682,
+            "p95": 0.117682,
+            "p99": 0.117682
+          }
+        }
+      ]
+    },
+    "q27_preemptions": {
+      "type": "counter",
+      "description": "Cumulative preemptions (q27 never preempts; FIFO queue).",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_prefill_cached_tokens": {
+      "type": "counter",
+      "description": "Prompt tokens served from the prefix cache (RAM or disk).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_prefill_cached_tokens_processed": {
+      "type": "counter",
+      "description": "Prefill tokens served from cache (live, cumulative).",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_prefill_computed_tokens": {
+      "type": "counter",
+      "description": "Prompt tokens actually computed (not served from prefix cache).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 819200.0,
+            "rate": 1848.7900107370538
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_prefill_computed_tokens_processed": {
+      "type": "counter",
+      "description": "Prefill tokens computed (live, cumulative).",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 819200.0,
+            "rate": 1848.7900107370538
+          }
+        }
+      ]
+    },
+    "q27_prompt_tokens": {
+      "type": "counter",
+      "description": "Prompt tokens sent to prefill (incl. cached).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 819200.0,
+            "rate": 1848.7900107370538
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_queue_wait_seconds": {
+      "type": "counter",
+      "description": "Sum of queue wait (slot claim) across requests.",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 0.094014,
+            "rate": 0.00021217302742850753
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_requests": {
+      "type": "counter",
+      "description": "Generation requests ([req] universe).",
+      "unit": "requests",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 100.0,
+            "rate": 0.2256823743575505
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_requests_errors": {
+      "type": "counter",
+      "description": "Generation requests ending end=error.",
+      "unit": "errors",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_requests_inflight": {
+      "type": "gauge",
+      "description": "Slots currently claimed by a generation.",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "avg": 0.9902402402402403,
+            "min": 0.0,
+            "max": 1.0,
+            "std": 0.09834514698870883,
+            "p1": 1.0,
+            "p5": 1.0,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p50": 1.0,
+            "p75": 1.0,
+            "p90": 1.0,
+            "p95": 1.0,
+            "p99": 1.0
+          }
+        }
+      ]
+    },
+    "q27_slots_total": {
+      "type": "gauge",
+      "description": "Configured serving slots.",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "avg": 8.0,
+            "min": 8.0,
+            "max": 8.0,
+            "std": 0.0,
+            "p1": 8.0,
+            "p5": 8.0,
+            "p10": 8.0,
+            "p25": 8.0,
+            "p50": 8.0,
+            "p75": 8.0,
+            "p90": 8.0,
+            "p95": 8.0,
+            "p99": 8.0
+          }
+        }
+      ]
+    },
+    "q27_spec_accept_ratio": {
+      "type": "gauge",
+      "description": "Cumulative MTP accept ratio (accepted / drafted).",
+      "unit": "ratio",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "avg": 0.5327407732732732,
+            "min": 0.461538,
+            "max": 0.561151,
+            "std": 0.025213333030899916,
+            "p1": 0.46642826,
+            "p5": 0.4735301,
+            "p10": 0.48796069999999997,
+            "p25": 0.52037,
+            "p50": 0.541941,
+            "p75": 0.552475,
+            "p90": 0.557648,
+            "p95": 0.559706,
+            "p99": 0.560896
+          }
+        }
+      ]
+    },
+    "q27_spec_accepted_tokens": {
+      "type": "counter",
+      "description": "Cumulative MTP draft lanes accepted (accept gate).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 958.0,
+            "rate": 2.162037146345334
+          }
+        }
+      ]
+    },
+    "q27_spec_draft_tokens": {
+      "type": "counter",
+      "description": "Cumulative MTP draft lanes fired (accept gate).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 1690.0,
+            "rate": 3.8140321266426036
+          }
+        }
+      ]
+    },
+    "q27_ttft_seconds": {
+      "type": "histogram",
+      "description": "Pre-fill wall per request (first-token latency proxy).",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.010": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "count": 100,
+            "sum": 307.897775,
+            "avg": 3.0789777500000004,
+            "count_rate": 0.2256823743575505,
+            "sum_rate": 0.6948710092140686,
+            "p1_estimate": 3.0789884865533526,
+            "p5_estimate": 3.0789884865533526,
+            "p10_estimate": 3.0789884865533526,
+            "p25_estimate": 3.0789884865533526,
+            "p50_estimate": 3.0789884865533526,
+            "p75_estimate": 3.0789884865533526,
+            "p90_estimate": 3.0789884865533526,
+            "p95_estimate": 3.0789884865533526,
+            "p99_estimate": 3.0789884865533526
+          },
+          "buckets": {
+            "0.010": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 100,
+            "10.000": 100,
+            "30.000": 100,
+            "60.000": 100,
+            "+Inf": 100
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.010": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.010": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    }
+  },
+  "warmup_metrics": {
+    "q27_decode_tokens": {
+      "type": "counter",
+      "description": "Generated tokens delivered.",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 4096.0,
+            "rate": 117.22438921767277
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_decode_tokens_processed": {
+      "type": "counter",
+      "description": "Tokens delivered during decode (live, cumulative).",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 4096.0,
+            "rate": 117.22438921767277
+          }
+        }
+      ]
+    },
+    "q27_e2e_seconds": {
+      "type": "histogram",
+      "description": "Wall from request arrival to generation complete.",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "300.000": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "count": 8,
+            "sum": 34.879988,
+            "avg": 4.3599985,
+            "count_rate": 0.22895388519076712,
+            "sum_rate": 0.9982385960009167,
+            "p1_estimate": 3.7484500086679136,
+            "p5_estimate": 3.801408033470533,
+            "p10_estimate": 3.867605564473807,
+            "p25_estimate": 4.066198157483629,
+            "p50_estimate": 4.397185812499999,
+            "p75_estimate": 4.710517405016369,
+            "p90_estimate": 4.809266810526192,
+            "p95_estimate": 4.820776841529466,
+            "p99_estimate": 4.829984866332086
+          },
+          "buckets": {
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 8,
+            "10.000": 8,
+            "30.000": 8,
+            "60.000": 8,
+            "300.000": 8,
+            "+Inf": 8
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "300.000": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "300.000": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "q27_itl_seconds": {
+      "type": "histogram",
+      "description": "Per-request mean inter-token latency (dec_ms / dec).",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.003": 0,
+            "0.004": 0,
+            "0.005": 0,
+            "0.008": 0,
+            "0.010": 0,
+            "0.015": 0,
+            "0.020": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "count": 8,
+            "sum": 0.020347000000000004,
+            "avg": 0.0025433750000000005,
+            "count_rate": 0.22895388519076712,
+            "sum_rate": 0.0005823155877470674,
+            "p1_estimate": 0.0021083375625897374,
+            "p5_estimate": 0.002145311526571167,
+            "p10_estimate": 0.002191528981547954,
+            "p25_estimate": 0.0023301813464783145,
+            "p50_estimate": 0.0025567952160216864,
+            "p75_estimate": 0.0027610420588622484,
+            "p90_estimate": 0.0028809061213622483,
+            "p95_estimate": 0.0029208608088622484,
+            "p99_estimate": 0.0029528245588622483
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.003": 8,
+            "0.004": 8,
+            "0.005": 8,
+            "0.008": 8,
+            "0.010": 8,
+            "0.015": 8,
+            "0.020": 8,
+            "0.050": 8,
+            "0.100": 8,
+            "+Inf": 8
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.003": 0,
+            "0.004": 0,
+            "0.005": 0,
+            "0.008": 0,
+            "0.010": 0,
+            "0.015": 0,
+            "0.020": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.001": 0,
+            "0.002": 0,
+            "0.003": 0,
+            "0.004": 0,
+            "0.005": 0,
+            "0.008": 0,
+            "0.010": 0,
+            "0.015": 0,
+            "0.020": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    },
+    "q27_kv_usage_perc": {
+      "type": "gauge",
+      "description": "Paged KV pool occupancy (0-1).",
+      "unit": "ratio",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "avg": 0.07877141588785047,
+            "min": 0.014925,
+            "max": 0.117682,
+            "std": 0.03152684224431544,
+            "p1": 0.0294205,
+            "p5": 0.0294205,
+            "p10": 0.0294205,
+            "p25": 0.051163749999999994,
+            "p50": 0.0876172,
+            "p75": 0.116823,
+            "p90": 0.117682,
+            "p95": 0.117682,
+            "p99": 0.117682
+          }
+        }
+      ]
+    },
+    "q27_preemptions": {
+      "type": "counter",
+      "description": "Cumulative preemptions (q27 never preempts; FIFO queue).",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_prefill_cached_tokens": {
+      "type": "counter",
+      "description": "Prompt tokens served from the prefix cache (RAM or disk).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_prefill_cached_tokens_processed": {
+      "type": "counter",
+      "description": "Prefill tokens served from cache (live, cumulative).",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_prefill_computed_tokens": {
+      "type": "counter",
+      "description": "Prompt tokens actually computed (not served from prefix cache).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 65536.0,
+            "rate": 1875.5902274827642
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_prefill_computed_tokens_processed": {
+      "type": "counter",
+      "description": "Prefill tokens computed (live, cumulative).",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 65536.0,
+            "rate": 1875.5902274827642
+          }
+        }
+      ]
+    },
+    "q27_prompt_tokens": {
+      "type": "counter",
+      "description": "Prompt tokens sent to prefill (incl. cached).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 65536.0,
+            "rate": 1875.5902274827642
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_queue_wait_seconds": {
+      "type": "counter",
+      "description": "Sum of queue wait (slot claim) across requests.",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 0.007147999999999999,
+            "rate": 0.00020457029641795038
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_requests": {
+      "type": "counter",
+      "description": "Generation requests ([req] universe).",
+      "unit": "requests",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 8.0,
+            "rate": 0.22895388519076712
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_requests_errors": {
+      "type": "counter",
+      "description": "Generation requests ending end=error.",
+      "unit": "errors",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "total": 0.0,
+            "rate": 0.0
+          }
+        }
+      ]
+    },
+    "q27_requests_inflight": {
+      "type": "gauge",
+      "description": "Slots currently claimed by a generation.",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "avg": 0.9813084112149533,
+            "min": 0.0,
+            "max": 1.0,
+            "std": 0.1360707648313611,
+            "p1": 0.06000000000000005,
+            "p5": 1.0,
+            "p10": 1.0,
+            "p25": 1.0,
+            "p50": 1.0,
+            "p75": 1.0,
+            "p90": 1.0,
+            "p95": 1.0,
+            "p99": 1.0
+          }
+        }
+      ]
+    },
+    "q27_slots_total": {
+      "type": "gauge",
+      "description": "Configured serving slots.",
+      "unit": "count",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "avg": 8.0,
+            "min": 8.0,
+            "max": 8.0,
+            "std": 0.0,
+            "p1": 8.0,
+            "p5": 8.0,
+            "p10": 8.0,
+            "p25": 8.0,
+            "p50": 8.0,
+            "p75": 8.0,
+            "p90": 8.0,
+            "p95": 8.0,
+            "p99": 8.0
+          }
+        }
+      ]
+    },
+    "q27_spec_accept_ratio": {
+      "type": "gauge",
+      "description": "Cumulative MTP accept ratio (accepted / drafted).",
+      "unit": "ratio",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "avg": 0.4509791121495328,
+            "min": 0.409091,
+            "max": 0.489362,
+            "std": 0.02486227797374786,
+            "p1": 0.409091,
+            "p5": 0.409091,
+            "p10": 0.409091,
+            "p25": 0.4316815,
+            "p50": 0.459677,
+            "p75": 0.473282,
+            "p90": 0.480769,
+            "p95": 0.480769,
+            "p99": 0.489362
+          }
+        }
+      ]
+    },
+    "q27_spec_accepted_tokens": {
+      "type": "counter",
+      "description": "Cumulative MTP draft lanes accepted (accept gate).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 53.0,
+            "rate": 1.516819489388832
+          }
+        }
+      ]
+    },
+    "q27_spec_draft_tokens": {
+      "type": "counter",
+      "description": "Cumulative MTP draft lanes fired (accept gate).",
+      "unit": "tokens",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "stats": {
+            "total": 105.0,
+            "rate": 3.0050197431288184
+          }
+        }
+      ]
+    },
+    "q27_ttft_seconds": {
+      "type": "histogram",
+      "description": "Pre-fill wall per request (first-token latency proxy).",
+      "unit": "seconds",
+      "series": [
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "chat"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.010": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "completions"
+          },
+          "stats": {
+            "count": 8,
+            "sum": 24.432605,
+            "avg": 3.054075625,
+            "count_rate": 0.22895388519076712,
+            "sum_rate": 0.6992424800101703,
+            "p1_estimate": 2.717935175577416,
+            "p5_estimate": 2.718847387009872,
+            "p10_estimate": 2.7199876513004417,
+            "p25_estimate": 2.755405553547151,
+            "p50_estimate": 3.0061475781249998,
+            "p75_estimate": 3.2852863995778483,
+            "p90_estimate": 3.4527696924495577,
+            "p95_estimate": 3.5085974567401275,
+            "p99_estimate": 3.553259668172583
+          },
+          "buckets": {
+            "0.010": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 8,
+            "10.000": 8,
+            "30.000": 8,
+            "60.000": 8,
+            "+Inf": 8
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "messages"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.010": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "+Inf": 0
+          }
+        },
+        {
+          "endpoint_url": "http://127.0.0.1:8088/metrics",
+          "labels": {
+            "api": "responses"
+          },
+          "stats": {
+            "count": 0
+          },
+          "buckets": {
+            "0.010": 0,
+            "0.050": 0,
+            "0.100": 0,
+            "0.250": 0,
+            "0.500": 0,
+            "1.000": 0,
+            "2.500": 0,
+            "5.000": 0,
+            "10.000": 0,
+            "30.000": 0,
+            "60.000": 0,
+            "+Inf": 0
+          }
+        }
+      ]
+    }
+  },
+  "input_config": {
+    "models": {
+      "items": [
+        {
+          "name": "qwen38-27b-mtp"
+        }
+      ]
+    },
+    "endpoint": {
+      "urls": [
+        "http://127.0.0.1:8088"
+      ],
+      "type": "completions",
+      "path": "/v1/completions",
+      "api_key": "<redacted>",
+      "timeout": 600.0,
+      "streaming": true,
+      "use_legacy_max_tokens": true,
+      "use_server_token_count": true,
+      "extra": {
+        "ignore_eos": true,
+        "temperature": 0,
+        "cache_salt": "f97bb397b62746409670c9cf23ffe875:c1"
+      }
+    },
+    "datasets": [
+      {
+        "name": "main",
+        "type": "file",
+        "path": "/root/ucloud-com-runs/20261016T172526Z-q27-perf/eval/performance/dataset.jsonl",
+        "format": "single_turn",
+        "sampling": "sequential",
+        "entries": 100,
+        "random_seed": 42
+      }
+    ],
+    "phases": [
+      {
+        "name": "warmup",
+        "kind": "warmup",
+        "type": "concurrency",
+        "exclude_from_results": true,
+        "requests": 8,
+        "concurrency": 1
+      },
+      {
+        "name": "profiling",
+        "kind": "profiling",
+        "type": "concurrency",
+        "requests": 100,
+        "concurrency": 1
+      }
+    ],
+    "artifacts": {
+      "dir": "/root/ucloud-com-runs/20261016T172526Z-q27-perf/eval/performance/c1",
+      "records": [
+        "jsonl"
+      ],
+      "raw": false,
+      "auto_plot": false,
+      "plot_required": false
+    },
+    "tokenizer": {
+      "name": "builtin"
+    },
+    "gpu_telemetry": {
+      "enabled": false
+    },
+    "server_metrics": {
+      "enabled": true,
+      "urls": [],
+      "formats": [
+        "json",
+        "csv"
+      ]
+    },
+    "network_latency": {
+      "enabled": false
+    },
+    "otel": {},
+    "mlflow": {},
+    "wandb": {},
+    "runtime": {
+      "ui": "none",
+      "workers": 2
+    }
+  }
+}

@@ -29,7 +29,7 @@ W4A4 + MTP2 + FP8 KV + 融合，各档 8 预热、100 正式请求，8192/512 to
 
 [C1](performance/final/c1/) · [C2](performance/final/c2/) · [C4](performance/final/c4/) · [C8](performance/final/c8/) · [C9](performance/final/c9/) · [C10](performance/final/c10/) · [C11](performance/final/c11/) · [C12](performance/final/c12/) · [C13](performance/final/c13/) · [C14](performance/final/c14/) · [C15](performance/final/c15/)
 
-逐请求延迟和 token 数见 `profile_export.jsonl`；`benchmark_phase=warmup` 不进入正式统计。吞吐、测量时长见 `profile_export_aiperf.json`。排队、Prefill、Decode、MTP 与 KV 指标对应 `server_metrics.json` 和 `context/server_metrics*.prom`。
+逐请求延迟和 token 数见 `profile_export.jsonl`；`benchmark_phase=warmup` 不进入正式统计。吞吐、测量时长见 `profile_export_aiperf.json`。排队、Prefill、Decode、MTP 与 KV 指标见 `server_metrics_export.json`，采集记录见 `server_metrics.json` 和 `context/server_metrics*.prom`。
 
 ## IFBench100（第 6、7 页）
 
