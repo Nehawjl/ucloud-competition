@@ -6,6 +6,8 @@
 
 性能测试使用 AIPerf 0.13.0：每档 8 个预热请求、100 个正式请求，闭环并发；输入 8192 token、输出 512 token，seed 42，temperature 0，ignore_eos。预热不进入统计；P95 使用逐请求数据计算，网络时间计入延迟。异常与中断保留独立状态，不以部分请求代替完整档位。
 
+比赛方原始工具保留在 `third_party/eval.zip` 及其完整解压目录。`CONCURRENCY=8 bash scripts/run.sh official-perf` 通过最小适配仅选择 C8，再执行官方 `runner.main`；支持选择 C1 至 C14，原始工具文件、数据生成与统计逻辑不修改。下文展示记录由复用官方评测函数的定向脚本采集，逐档启动配置随原始记录保留。
+
 - TTFT：首 token 延迟。
 - TPOT：每个请求 `(E2E−TTFT)/(输出 token 数−1)`，再对请求取 P95。
 - 吞吐：正式测量区间内输出 token/s。

@@ -10,6 +10,7 @@
 - [技术与优化说明](docs/TECHNICAL.md)
 - [展示结果与原始记录](evidence/README.md)
 - [并发演示](docs/DEMO.md)
+- [比赛方评测工具原文](third_party/official-eval/README.md)
 - [来源与署名](NOTICE.md)
 
 ## 1. 环境与固定版本
@@ -52,26 +53,29 @@ bash scripts/setup_eval.sh perf
 
 `setup.sh` 校验上游源码 SHA-256，安装固定版本并依次应用上游 patch stack 和本仓库补丁。`prepare_model.sh` 固定两个模型 revision，不覆盖已有模型目录，也不重新校准 INT4 权重。性能测试只需 `setup_eval.sh perf`，不依赖 EvalScope 或 NLTK。首次启动包含 kernel 编译和 CUDA Graph capture，需要等待。
 
-## 3. 性能复现
+## 3. 官方性能复现
 
-每条命令启动独立 detached tmux 会话和全新服务，测试结束后停止该服务并返回实际退出码。请勿并行执行 GPU 测试。
+比赛方原始 `eval.zip` 和完整解压文件均保留在 `third_party/`，可运行 `python3 scripts/verify_official_eval.py` 校验原包及三个文件逐字节一致。
+
+官方原工具固定测试 C1/C2/C4/C8。本仓库另提供最小适配入口，仅将并发列表扩展为 C1 至 C14 可选，随后执行官方 `runner.main` 完整性能流程；原包与解压文件不修改，数据构造、预热、请求数、统计与报告逻辑不变。
+
+以下命令仅测试 C8，自动启动我方推理服务，使用独立 detached tmux 会话，结束后停止本次服务并返回实际退出码。请勿并行执行 GPU 测试。
 
 ```bash
-# 先确认最终启动参数，不启动 GPU 服务
-CONCURRENCY=14 bash scripts/serve.sh --print
+# 先确认服务启动参数，不启动 GPU 服务
+CONCURRENCY=8 bash scripts/serve.sh --print
 
-# 官方四档，逐档测试
-for c in 1 2 4 8; do
-  CONCURRENCY="$c" bash scripts/run.sh perf || break
-done
-
-# 扩展并发
-CONCURRENCY=14 bash scripts/run.sh perf
+# 仅运行 C8：8 次预热 + 100 个正式请求
+CONCURRENCY=8 bash scripts/run.sh official-perf
 ```
+
+将 `CONCURRENCY` 改为 1 至 14 中的任意整数，即只测试对应一档，同时设置服务容量。每轮保留官方生成的报告、原始请求明细、工具校验结果与完整环境信息。原始四档入口仍可直接按[官方 README](third_party/official-eval/README.md)使用。
+
+旧版定向入口 `bash scripts/run.sh perf` 保留，使用相同官方评测函数，供已有命令兼容。新复验优先使用上面的 `official-perf`。
 
 性能设置：闭环请求、每档 8 预热 + 100 正式请求、固定 seed 42、8192/512 token、temperature 0、ignore_eos。输入由比赛工具按 tiktoken/o200k_base 重建，脚本核对固定数据指纹，报告记录服务端实际长度。TTFT P95 ≤10 s 且 TPOT P95 ≤40 ms/token 时判为双 SLO 通过。
 
-默认服务端口为 `18099`。需要更换时使用 `PORT=18098 CONCURRENCY=14 bash scripts/run.sh perf`。服务仅绑定 `127.0.0.1`，不开放公网访问。
+默认服务端口为 `18099`。需要更换时使用 `PORT=18098 CONCURRENCY=8 bash scripts/run.sh official-perf`。服务仅绑定 `127.0.0.1`，不开放公网访问。
 
 ## 4. IFBench100
 
@@ -105,6 +109,7 @@ requirements.txt          推理环境核心依赖
 patches/                  复现所需的实现补丁
 scripts/                  安装、模型准备、服务与评测入口
 third_party/official-eval/ 比赛方评测工具
+third_party/eval.zip       比赛方原始压缩包
 tests/                    不依赖 GPU 的配置测试
 demo/                     C1–C15 可选的并发演示与自由对话
 ```
