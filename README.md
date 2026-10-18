@@ -47,10 +47,10 @@ cd ucloud-competition
 export CUDA_HOME=/usr/local/cuda-13.0
 bash scripts/setup.sh
 bash scripts/prepare_model.sh
-bash scripts/setup_eval.sh
+bash scripts/setup_eval.sh perf
 ```
 
-`setup.sh` 校验上游源码 SHA-256，安装固定版本并依次应用上游 patch stack 和本仓库补丁。`prepare_model.sh` 固定两个模型 revision，不覆盖已有模型目录，也不重新校准 INT4 权重。首次启动包含 kernel 编译和 CUDA Graph capture，需要等待。
+`setup.sh` 校验上游源码 SHA-256，安装固定版本并依次应用上游 patch stack 和本仓库补丁。`prepare_model.sh` 固定两个模型 revision，不覆盖已有模型目录，也不重新校准 INT4 权重。性能测试只需 `setup_eval.sh perf`，不依赖 EvalScope 或 NLTK。首次启动包含 kernel 编译和 CUDA Graph capture，需要等待。
 
 ## 3. 性能复现
 
@@ -76,10 +76,13 @@ CONCURRENCY=14 bash scripts/run.sh perf
 ## 4. IFBench100
 
 ```bash
+bash scripts/setup_eval.sh accuracy
 CONCURRENCY=14 bash scripts/run.sh accuracy
 ```
 
 使用比赛提供的 EvalScope 1.13.0 评测入口：IFBench 原生前 100 题、请求并发 2、`max_tokens=32768`，其余使用工具默认生成配置。精度测试不继承性能测试的 temperature 或 ignore_eos。
+
+准确率环境另需 NLTK 的 `punkt_tab`、`stopwords`、`averaged_perceptron_tagger_eng`。资源下载失败时立即退出，不进入交互重试，也不关闭 NLTK 的网络安全检查。若网络策略拒绝下载，请按所在环境的安全要求准备这些资源并通过 `NLTK_DATA` 指定路径，再重试。需要一次安装两类工具时可执行 `bash scripts/setup_eval.sh all`。
 
 ## 5. 输出与异常处理
 
