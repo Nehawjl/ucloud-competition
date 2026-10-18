@@ -32,6 +32,11 @@ cp "$PROJECT_DIR/config/versions.env" "$RUN_DIR/versions.env"
 if [[ -f "$WORK_DIR/installed-packages.txt" ]]; then
   cp "$WORK_DIR/installed-packages.txt" "$RUN_DIR/installed-packages.txt"
 fi
+python3 "$PROJECT_DIR/scripts/verify_official_eval.py" >"$RUN_DIR/official_tool_verification.json"
+EVAL_STAGE=perf
+[[ "$MODE" != accuracy ]] || EVAL_STAGE=accuracy
+"$PYTHON" "$PROJECT_DIR/scripts/check_eval.py" --mode "$EVAL_STAGE" \
+  --env-dir "$EVAL_ENV_DIR" >"$RUN_DIR/evaluation_dependencies.json"
 unset OPENAI_API_KEY VLLM_API_KEY
 URL="http://127.0.0.1:${PORT:-18099}"
 if curl --silent --fail "$URL/health" >/dev/null; then echo 'Port already serves a model; refusing to reuse it.'; exit 2; fi
@@ -57,7 +62,13 @@ done
 [[ "$READY" == 1 ]] || { echo 'Service readiness timed out.'; exit 1; }
 grep -Fq 'Using HummingLinearKernel for CompressedTensorsWNA4Int' "$RUN_DIR/server.log"
 curl --silent --fail "$URL/metrics" >"$RUN_DIR/metrics_before.prom"
-if [[ "$MODE" == perf ]]; then
+if [[ "$MODE" == official-perf ]]; then
+  "$PYTHON" "$PROJECT_DIR/scripts/run_official_performance.py" \
+    --concurrency "$CONCURRENCY" --base-url "$URL/v1" --model qwen3.8-27b \
+    --perf-requests 100 --request-timeout 600 --seed 42 \
+    --env-dir "$EVAL_ENV_DIR" --output-dir "$RUN_DIR/eval"
+  printf '%s  %s\n' "$DATASET_SHA256" "$RUN_DIR/eval/performance/dataset.jsonl" | sha256sum --check -
+elif [[ "$MODE" == perf ]]; then
   "$EVAL_ENV_DIR/aiperf-0.13.0/bin/python" "$PROJECT_DIR/third_party/official-eval/runner.py" \
     _dataset builtin '' "$RUN_DIR/dataset.jsonl" 109 42
   printf '%s  %s\n' "$DATASET_SHA256" "$RUN_DIR/dataset.jsonl" | sha256sum --check -

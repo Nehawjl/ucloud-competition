@@ -3,9 +3,20 @@
 set -Eeuo pipefail
 source "$(dirname -- "${BASH_SOURCE[0]}")/common.sh"
 MODE="${1:-perf}"
-[[ "$MODE" == perf || "$MODE" == accuracy ]] || { echo 'Usage: bash scripts/run.sh perf|accuracy' >&2; exit 2; }
-CONCURRENCY="${CONCURRENCY:-14}"
+[[ "$MODE" == perf || "$MODE" == official-perf || "$MODE" == accuracy ]] || {
+  echo 'Usage: bash scripts/run.sh official-perf|perf|accuracy' >&2
+  exit 2
+}
+if [[ "$MODE" == official-perf ]]; then
+  CONCURRENCY="${CONCURRENCY:-8}"
+else
+  CONCURRENCY="${CONCURRENCY:-14}"
+fi
 python3 "$PROJECT_DIR/scripts/runtime_config.py" "$CONCURRENCY" >/dev/null
+[[ "$MODE" != official-perf || "$CONCURRENCY" -le 14 ]] || {
+  echo 'official-perf supports C1-C14; choose CONCURRENCY=1..14.' >&2
+  exit 2
+}
 RUN_ID="${RUN_ID:-$(date -u +%Y%m%dT%H%M%SZ)-w4a4-fp8-$MODE-c$CONCURRENCY}"
 [[ "$RUN_ID" =~ ^[0-9]{8}T[0-9]{6}Z-[a-z0-9-]+$ ]] || { echo 'Invalid RUN_ID' >&2; exit 2; }
 RUN_DIR="$WORK_DIR/runs/$RUN_ID"
